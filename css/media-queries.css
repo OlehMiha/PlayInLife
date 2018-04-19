@@ -1,0 +1,80 @@
+/* 4K*/
+@media only screen and (max-width:5920px) {
+
+}
+
+/* Full HD*/
+@media only screen and (max-width:1920px) {
+
+}
+
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+@media only screen and (max-width: 1200px) { 
+    .menu_top {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .menu_top li {
+        margin-right: 0px;
+    }
+    
+}
+
+
+/* Большие девайсы (десктопы, <= 991px) */
+@media only screen and (max-width: 991px) { 
+
+    .container {
+        max-width: 100%;
+    }
+
+    
+    .menu_top {
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .menu_top {    
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    .menu_top li {
+        height: 60px;
+        /*display: none;*/
+        margin: 0px;
+        font-size: 20px;
+        width: 100%;
+    }
+    .menu_top li a:after {
+        display: none;
+    }
+    .button_mobi_menu {
+        display: block;
+    }
+
+   
+}
+
+/* Средние девайсы («таблетки», <= 767px) */
+@media only screen and (max-width: 767px) { 
+    
+}
+
+/* Малые девайсы («ландшафтные телефоны», <= 575px) */
+@media only screen and (max-width: 575px) {
+    
+}
+
+@media only screen and (max-width: 490px) {
+   
+}
+@media only screen and (max-width: 400px) {
+   
+}
+
+/* IPhone 5 */
+@media only screen and (max-width: 320px) {
+
+}
