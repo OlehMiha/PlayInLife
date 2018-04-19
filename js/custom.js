@@ -52,19 +52,73 @@ var close = false;
     });
 
 
+//Клик edit
+    $(document).on('click','.clicker_js', function (e) {
+        e.preventDefault();
+        if ($(this).hasClass('active')) {
+            $(this).removeClass("active");
+            $(this).next(".clicker-iner_js").removeClass("active");
+            $(this).next(".clicker-iner_js").fadeOut(500);
+            return;
+        }
+        $(this).addClass('active');
+        $(this).next(".clicker-iner_js").fadeIn(500);
+        $(this).next(".clicker-iner_js").addClass('active');
+    });
+
+    $(document).on('click','.clicker-iner_js a, .clicker-iner_js button', function (e) {
+        e.preventDefault();
+        if ($(this).closest('.clicker-iner_js').hasClass('active')) {
+            $(this).closest('.clicker-iner_js').removeClass("active");
+            $(this).closest('.clicker-iner_js').prev('.clicker_js').removeClass("active");
+            $(this).closest('.clicker-iner_js').fadeOut(500);
+            return;
+        }
+        $(this).closest('.clicker-iner_js').addClass('active');
+        $(this).closest('.clicker-iner_js').fadeIn(500);
+        $(this).closest('.clicker-iner_js').prev('.clicker_js').addClass('active');
+    });
+
+//Level
+$(document).on('click','#level_close', function (e) {
+    $(".header_level_div").fadeOut(500);
+});
+$(document).on('click','#level_open', function (e) {
+    $(".header_level_div").fadeIn(500);
+});
+
+
+
+
+//all_comments
+$('.view_comments_js').on('click', function (e) {
+    e.preventDefault();
+    if ($(this).hasClass('active')) {
+        $(this).removeClass("active");
+        $(".all_comments_js").removeClass("active");
+        $(this).find('a').text('Показать все комментарии');
+        return;
+    }
+    $(this).addClass('active');
+    $(".all_comments_js").addClass('active');
+    $(this).find('a').text('Скрыть все комментарии');
+});
+
+
+
 //Меню топ скрол
     var h = $(window).height();
  
-    if ( ($(this).scrollTop()) > 0 ) {
-        $(".menu_div").addClass('scroll');
-    } 
+    // if ( ($(this).scrollTop()) > 0 ) {
+    //     $(".menu_div").addClass('scroll');
+    // } 
     $(window).scroll(function(){
-        if ( ($(this).scrollTop()) > 0 ) {
-            $(".menu_div").addClass('scroll');
-        } 
-        if ( $(this).scrollTop() == 0 ) {
-            $(".menu_div").removeClass('scroll');
-        }
+        // if ( ($(this).scrollTop()) > 0 ) {
+        //     $(".menu_div").addClass('scroll');
+        // } 
+        // if ( $(this).scrollTop() == 0 ) {
+        //     $(".menu_div").removeClass('scroll');
+        // }
 
 
         $('.mov_next_fadeInUp').each(function(){
