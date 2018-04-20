@@ -87,7 +87,27 @@ $(document).on('click','#level_open', function (e) {
     $(".header_level_div").fadeIn(500);
 });
 
-
+//open
+    $(document).on('click','.open_js', function (e) {
+        e.preventDefault();
+        var class_open = $(this).attr('data-open');
+        if ($(this).hasClass('active')) {
+            $(this).removeClass("active");
+            $('.' + class_open).fadeOut(500);
+            return;
+        }
+        $(this).addClass('active');
+        $('.' + class_open).fadeIn(500);
+    });
+//gellary
+    $(document).on('click','.black_check', function (e) {
+        e.preventDefault();
+        if ($(this).hasClass('active')) {
+            $(this).removeClass("active");
+            return;
+        }
+        $(this).addClass('active');
+    });
 
 
 //all_comments

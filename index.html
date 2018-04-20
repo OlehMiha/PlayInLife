@@ -58,7 +58,46 @@
 			
             <div class="menu_div_off"></div>
             <div class="menu_div scroll"> 
-                <div class="container">
+                <div class="container head_container_scroll">
+                    
+                    <div class="head_notifications">
+                        <div class="row no-gutters head_notifications_iner">
+                            <div class="col notifications_left">
+                                <ul class="left_menu">
+                                    <li class="all_not"><a href="#">Все</a></li>
+                                    <li><a href="#">Выполненное задание</a><span class="lable on">5</span></li>
+                                    <li><a href="#">Новое задание</a></li>
+                                    <li><a href="#">Дружба</a></li>
+                                    <li><a href="#">Комментарии</a></li>
+                                    <li><a href="#">Вас оценили</a></li>
+                                    <li><a href="#">Конкурсы</a></li>
+                                </ul>
+                            </div>
+                            <div class="col notifications_right">
+                                <a href="#" class="task">
+                                    <div class="task_img"></div>
+                                    <p class="title_task">Задание странное</p>
+                                    <p class="text_task">
+                                        Нужно выполнить лютую жесть и выжить!
+                                    </p>
+                                </a>
+                                <a href="#" class="task">
+                                    <div class="task_img"></div>
+                                    <p class="title_task">Задание странное</p>
+                                    <p class="text_task">
+                                        Нужно выполнить лютую жесть и выжить!
+                                    </p>
+                                </a>
+
+                                <a href="#" class="friends">
+                                    <div class="friends_img"></div>
+                                    <p class="title_friends">Наталья Самойлова</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="row align-items-center">
                         <div class="col left_col">
                             <a href="#top" class="logo go_a"></a>
@@ -67,12 +106,43 @@
                         <div class="col search_col">
                             <div class="search_div">
                                 <input type="search" class="form_input_0 form_input_1 search_input" name="" placeholder="Поиск">
+                                <div class="search_div_iner">
+                                    <div class="search_div_iner_title">
+                                        Задания
+                                        <a href="#"></a>
+                                    </div>
+                                    <a href="#" class="task">
+                                        <div class="task_img"></div>
+                                        <p class="title_task">Задание странное</p>
+                                        <p class="text_task">
+                                            Нужно выполнить лютую жесть и выжить!
+                                        </p>
+                                    </a>
+                                    <a href="#" class="task">
+                                        <div class="task_img"></div>
+                                        <p class="title_task">Задание странное</p>
+                                        <p class="text_task">
+                                            Нужно выполнить лютую жесть и выжить!
+                                        </p>
+                                    </a>
+
+                                    <div class="search_div_iner_title">
+                                        Люди
+                                        <a href="#"></a>
+                                    </div>
+
+                                    <a href="#" class="friends">
+                                        <div class="friends_img"></div>
+                                        <p class="title_friends">Наталья Самойлова</p>
+                                    </a>
+
+                                </div>
                             </div>
                         </div>
 
 
                         <div class="col button_header_div row align-items-center justify-content-end">
-                            <a href="#" class="icon icon_not"></a>
+                            <a href="#" class="icon icon_not open_js" data-open="head_notifications"></a>
                             <a href="#" class="icon icon_settin"></a>
                             <a href="#" class="icon icon_exit"></a>
                         </div>
@@ -90,42 +160,6 @@
                 </div>
             </div>
         </header>
-
-
-        <!-- Leftbar (sitebar) -->
-<!--         <section>
-            <div class="leftbar">
-                <div class="container">
-                    <div class="row justify-content-start">
-                      <div class="col left_col">
-
-                          <div class="left_menu">
-                            <ul class="top">
-                                <li><i class="icon_m icon_m_1"></i>Моя страница<span class="lable off">5</span></li>
-                                <li><i class="icon_m icon_m_2"></i>Категории</li>
-                                <li><i class="icon_m icon_m_3"></i>Достижения</li>
-                            </ul>
-
-                            <ul class="mid">
-                                <li><i class="icon_m icon_m_4"></i>Что нового?</li>
-                                <li><i class="icon_m icon_m_5"></i>Рейтинг</li>
-                                <li><i class="icon_m icon_m_6"></i>Друзья</li>
-                                <li><i class="icon_m icon_m_7"></i>Сообщения<span class="lable on">5</span></li>
-                                <li><i class="icon_m icon_m_8"></i>Фото/Видео</li>
-                                <li><i class="icon_m icon_m_9"></i>Закладки</li>
-                            </ul>    
-
-                            <ul class="bot">
-                                <li><i class="icon_m icon_m_10"></i>Ваши отзывы</li>
-                                <li><i class="icon_m icon_m_11"></i>Помощь</li>
-                            </ul>   
-                          </div>
-
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
         <!-- Block 1 (content) -->
         <section>
@@ -296,7 +330,7 @@
                                             <a href="#" class="add button_0"></a>
                                             <a href="#" class="message button_0"></a>
                                             <div class="avatar">
-                                                <a href="#" class="bth_ava button_0">Редактировать</a>
+                                                <a href="#" data-toggle="modal" data-target="#modal_ava" class="bth_ava button_0">Редактировать</a>
                                             </div>
                                         </div>
 
@@ -551,6 +585,27 @@
 
         <!-- Footer -->
         <footer>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col">
+                        <button type="submit" class="button_0 button_1 align-items-center justify-content-center" data-toggle="modal" data-target="#modal_ava">Модал 1</button>
+                    </div>
+
+                    <div class="col">
+                        <button type="submit" class="button_0 button_1 align-items-center justify-content-center" data-toggle="modal" data-target="#exampleModal_2">Модал 2</button>
+                    </div>
+
+                    <div class="col">
+                        <button type="submit" class="button_0 button_1 align-items-center justify-content-center" data-toggle="modal" data-target="#exampleModal_3">Модал 3</button>
+                    </div>
+
+                    <div class="col">
+                        <button type="submit" class="button_0 button_1 align-items-center justify-content-center" data-toggle="modal" data-target="#exampleModal_4">Модал 4</button>
+                    </div>
+                    
+                </div>
+            </div>
         </footer>
 
 	</div>
@@ -566,28 +621,20 @@
     -->
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog_1 modal-dialog_2" role="document">
+    <div class="modal fade" id="modal_ava" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog_1" role="document">
         <div class="modal-content">
           <div class="modal-body modal-body_1">
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img src="img/close.png" alt="close"></button>
-                <div class="right_modal">
-                    <h6>ЗАКАЗ С МЕНЕДЖЕРОМ</h6>
-                    <p class="title_modal">
-                        Заполните форму для связи и получите бесплатную диагностику вашего фильтра
-                    </p>
-                    <form id="manedj_form" class="w_me" method="post" action="">
-                        <input type="text" class="form_input_0 form_input_2 name" name="name" minlength="1" placeholder="Ваше Имя" pattern="^[_a-zA-Zа-яА-ЯёЁ ]+$" required autocomplete="off">
-                        <input type="tel" class="form_input_0 form_input_2 phone" name="tel" minlength="5" placeholder="Ваш номер телефона" pattern="^([\+]+)*[0-9\x20\x28\x29\-]{5,20}$" required autocomplete="off">
-                        <input class="title_php" type="hidden" name="title" value='ЗАЯВКА "ЗАКАЗ С МЕНЕДЖЕРОМ"'>
+                <div class="modal_top">Загрузка фотографии</div>
+                <div class="modal_mid row align-items-center justify-content-center">
+                    <div class="modal_img_div"></div>
+                </div>
+                <div class="modal_bot">
+                    
+                    <button type="submit" class="button_0 button_1 align-items-center justify-content-center">Добавить фаил</button>
+                    <button type="submit" class="button_0 button_1 align-items-center justify-content-center">Опубликовать</button>
 
-                        <button type="submit" class="button_0 button_1 align-items-center justify-content-center button_form_modal">
-                            Отправить заявку
-                        </button>
-                        <p class="modal_bot_text">
-                            Нажимая на кнопку "Отправить заявку" я даю свое согласие на обработку персональных данных
-                        </p>
-                    </form>
                 </div>
           </div>
         </div>
@@ -596,27 +643,18 @@
 
 
     <div class="modal fade" id="exampleModal_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog_1 modal-dialog_2" role="document">
+      <div class="modal-dialog modal-dialog_1" role="document">
         <div class="modal-content">
           <div class="modal-body modal-body_1">
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img src="img/close.png" alt="close"></button>
-                <div class="right_modal">
-                    <h6>МЫ ПЕРЕЗВОНИМ ВАМ !</h6>
-                    <p class="title_modal">
-                        Заполните форму для связи и получите бесплатную диагностику вашего фильтра
-                    </p>
-                    <form id="perezvon_form" class="w_me" method="post" action="">
-                        <input type="text" class="form_input_0 form_input_2 name" name="name" minlength="1" placeholder="Ваше Имя" pattern="^[_a-zA-Zа-яА-ЯёЁ ]+$" required autocomplete="off">
-                        <input type="tel" class="form_input_0 form_input_2 phone" name="tel" minlength="5" placeholder="Ваш номер телефона" pattern="^([\+]+)*[0-9\x20\x28\x29\-]{5,20}$" required autocomplete="off">
-                        <input class="title_php" type="hidden" name="title" value='ЗАЯВКА "МЫ ПЕРЕЗВОНИМ ВАМ"'>
+                <div class="modal_top">Загрузка фотографии</div>
+                <div class="modal_mid row align-items-center justify-content-center">
+                    <h3>Добавьте фотографию и получите достижение!</h3>
+                </div>
+                <div class="modal_bot">
+                    
+                    <button type="submit" class="button_0 button_1 align-items-center justify-content-center">Добавить фаил</button>
 
-                        <button type="submit" class="button_0 button_1 align-items-center justify-content-center button_form_modal">
-                            Отправить заявку
-                        </button>
-                        <p class="modal_bot_text">
-                            Нажимая на кнопку "Отправить заявку" я даю свое согласие на обработку персональных данных
-                        </p>
-                    </form>
                 </div>
           </div>
         </div>
@@ -629,29 +667,141 @@
         <div class="modal-content">
           <div class="modal-body modal-body_1">
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img src="img/close.png" alt="close"></button>
-                <div class="right_modal">
-                    <h6>ПРАЙС ВСЕГО КАТАЛОГА</h6>
-                    <p class="title_modal">
-                        Заполните форму заявки и мы вышлем Вам на e-mail полный прайс всего каталога
+                <div class="modal_top">Загрузка фотографии</div>
+                <div class="modal_top_2">
+                    <p>
+                        Выберите материал или загрузите новый
                     </p>
-                    <form id="katalog_form" class="w_me" method="post" action="">
-                        <input type="text" class="form_input_0 form_input_2 name" name="name" minlength="1" placeholder="Ваше Имя" pattern="^[_a-zA-Zа-яА-ЯёЁ ]+$" required autocomplete="off">
-                        <input type="tel" class="form_input_0 form_input_2 phone" name="tel" minlength="5" placeholder="Ваш номер телефона" pattern="^([\+]+)*[0-9\x20\x28\x29\-]{5,20}$" required autocomplete="off">
-                        <input type="email" class="form_input_0 form_input_2 email2" name="email" placeholder="Ваш Email" pattern="(([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9\-]+)\.[a-zA-Z0-9\-.]+$)" autocomplete="off" required>
-                        <input class="title_php" type="hidden" name="title" value='ЗАЯВКА "ПРАЙС ВСЕГО КАТАЛОГА"'>
 
-                        <button type="submit" class="button_0 button_1 align-items-center justify-content-center button_form_modal">
-                            Получить прайс всего каталога
-                        </button>
-                        <p class="modal_bot_text">
-                            Нажимая на кнопку "Отправить заявку" я даю свое согласие на обработку персональных данных
-                        </p>
-                    </form>
+                    <div class="modal_top_2_r">
+                        <a href="#" class="modal_top_2_ico modal_top_2_ico_1">
+                            
+                        </a>
+                        <a href="#" class="modal_top_2_ico modal_top_2_ico_2">
+                            
+                        </a>
+                        <a href="#" class="modal_top_2_ico modal_top_2_ico_3">
+                            
+                        </a>
+                        <button type="submit" class="button_0 button_1 button_2 align-items-center justify-content-center">
+                        Загрузить новый файл</button>
+                    </div>
+                    
+                </div>
+                <div class="modal_mid img_gallary_modal row no-gutters align-items-center justify-content-center">
+                    <div class="col">
+                        <div class="img_gallary">
+                            <div class="black_check"></div>
+                            <img src="img/foto_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img_gallary">
+                            <div class="black_check"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img_gallary">
+                            <div class="black_check"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img_gallary">
+                            <div class="black_check"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img_gallary">
+                            <div class="black_check"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img_gallary">
+                            <div class="black_check"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img_gallary">
+                            <div class="black_check"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img_gallary">
+                            <div class="black_check"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img_gallary">
+                            <div class="black_check"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img_gallary">
+                            <div class="black_check"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img_gallary">
+                            <div class="black_check"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img_gallary">
+                            <div class="black_check"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_bot">
+                    
+                    <button type="submit" class="button_0 button_1 align-items-center justify-content-center">Добавить фаил</button>
+
                 </div>
           </div>
         </div>
       </div>
     </div>
+
+    
+
+    <div class="modal fade" id="exampleModal_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_1 modal-dialog_4" role="document">
+            <div class="modal-content">
+                <div class="modal-body modal-body_1 modal-body_4">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img src="img/close.png" alt="close"></button>
+
+                    <div class="modal_mid them_mid">
+                        <p class="them_title">1-5 уровень</p>
+                        <div class="row no-gutters align-items-center justify-content-center">
+                            <div class="col item_them"><img src="img/them1.png" alt=""></div>
+                            <div class="col item_them"><img src="img/them2.png" alt=""></div>
+                            <div class="col item_them"><img src="img/them3.png" alt=""></div>
+                        </div>
+
+                        <p class="them_title">6-10 уровень</p>
+                        <div class="row no-gutters align-items-center justify-content-center">
+                            <div class="col item_them"></div>
+                            <div class="col item_them"></div>
+                            <div class="col item_them"></div>
+                        </div>
+                        <div class="row no-gutters align-items-center justify-content-center">
+                            <div class="col item_them"></div>
+                            <div class="col item_them"></div>
+                            <div class="col item_them"></div>
+                        </div>
+
+                        <p class="them_title">11-15 уровень</p>
+                        <div class="row no-gutters align-items-center justify-content-center">
+                            <div class="col item_them"></div>
+                            <div class="col item_them"></div>
+                            <div class="col item_them"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <div class="modal fade" id="sps" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
