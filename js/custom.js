@@ -99,8 +99,9 @@ $(document).on('click','#level_open', function (e) {
         $(this).addClass('active');
         $('.' + class_open).fadeIn(500);
     });
-//gellary
-    $(document).on('click','.black_check', function (e) {
+
+//gellary (active clicker)
+    $(document).on('click','.black_check, .active_clicker_js', function (e) {
         e.preventDefault();
         if ($(this).hasClass('active')) {
             $(this).removeClass("active");
@@ -122,6 +123,40 @@ $('.view_comments_js').on('click', function (e) {
     $(this).addClass('active');
     $(".all_comments_js").addClass('active');
     $(this).find('a').text('Скрыть все комментарии');
+});
+
+//Tabs
+$(".tab_js." + $('.tabs_js.active').attr('data-tab')).fadeIn(200);
+$('.tabs_js').on('click', function (e) {
+    e.preventDefault();
+    if ($(this).hasClass('active')) {
+        return;
+    }
+
+    var class_tab = $(this).attr('data-tab');
+
+    $(".tabs_js").removeClass('active');
+    $(".tab_js").css('display','none');
+
+    $(".tab_js." + class_tab).fadeIn(200);
+    $(this).addClass('active');
+});
+
+//Tabs_iner
+$(".tab_iner_js." + $('.tabs_iner_js.active').attr('data-tab')).fadeIn(200);
+$('.tabs_iner_js').on('click', function (e) {
+    e.preventDefault();
+    if ($(this).hasClass('active')) {
+        return;
+    }
+
+    var class_tab = $(this).attr('data-tab');
+
+    $(".tabs_iner_js").removeClass('active');
+    $(".tab_iner_js").css('display','none');
+
+    $(".tab_iner_js." + class_tab).fadeIn();
+    $(this).addClass('active');
 });
 
 

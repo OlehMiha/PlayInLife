@@ -19,6 +19,9 @@
 
     <!-- Awesome -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/> 
+
+    <!-- Formstyler -->
+    <link href="css/jquery.formstyler.css" rel="stylesheet" type="text/css"/>
 	
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -103,8 +106,9 @@
                             <a href="#top" class="logo go_a"></a>
                         </div>
 
+                        
                         <div class="col search_col">
-                            <div class="search_div">
+                            <form active="" name="" class="search_div">
                                 <input type="search" class="form_input_0 form_input_1 search_input" name="" placeholder="Поиск">
                                 <div class="search_div_iner">
                                     <div class="search_div_iner_title">
@@ -137,7 +141,7 @@
                                     </a>
 
                                 </div>
-                            </div>
+                            </form>
                         </div>
 
 
@@ -179,10 +183,10 @@
                                 <ul class="mid">
                                     <li><a href="#"><i class="icon_m icon_m_4"></i>Что нового?</a></li>
                                     <li><a href="#"><i class="icon_m icon_m_5"></i>Рейтинг</a></li>
-                                    <li><a href="#"><i class="icon_m icon_m_6"></i>Друзья</a></li>
+                                    <li><a href="friends.html"><i class="icon_m icon_m_6"></i>Друзья</a></li>
                                     <li><a href="#"><i class="icon_m icon_m_7"></i>Сообщения<span class="lable on">5</span></a></li>
                                     <li><a href="#"><i class="icon_m icon_m_8"></i>Фото/Видео</a></li>
-                                    <li><a href="#"><i class="icon_m icon_m_9"></i>Закладки</a></li>
+                                    <li><a href="bookmarks.html"><i class="icon_m icon_m_9"></i>Закладки</a></li>
                                 </ul>    
 
                                 <ul class="bot">
@@ -430,8 +434,6 @@
                                                 <li><a href="#">Удалить</a></li>
                                             </ul>
 
-
-
                                             <a href="#" class="posts_user">Наталья самойлова</a>
                                             <a href="#" class="posts_data">10 минут назад</a>
                                             <p>
@@ -602,6 +604,10 @@
 
                     <div class="col">
                         <button type="submit" class="button_0 button_1 align-items-center justify-content-center" data-toggle="modal" data-target="#exampleModal_4">Модал 4</button>
+                    </div>
+
+                    <div class="col">
+                        <button type="submit" class="button_0 button_1 align-items-center justify-content-center" data-toggle="modal" data-target="#exampleModal_5">Модал 5</button>
                     </div>
                     
                 </div>
@@ -804,6 +810,56 @@
 
 
 
+
+
+
+    <div class="modal fade" id="exampleModal_5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_1 modal-dialog_5" role="document">
+            <div class="modal-content">
+                <div class="modal-body modal-body_1">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img src="img/close.png" alt="close"></button>
+                    <div class="modal_top">Загрузка фотографии</div>
+                    <div class="modal_mid row align-items-center justify-content-center">
+                        <h3>Добавьте фотографию и получите достижение!</h3>
+                    </div>
+                    <div class="modal_bot">
+                        
+                        <button type="submit" class="button_0 button_1 align-items-center justify-content-center">Добавить фаил</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="modal fade" id="sps" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog_1" role="document">
         <div class="modal-content">
@@ -839,6 +895,14 @@
     <!-- Page Scroll JS -->
     <script src="js/jquery.malihu.PageScroll2id.min.js" defer></script>
 	
+    <!-- Formstyler -->
+    <script src="js/jquery.formstyler.min.js" defer></script>
+    <script>    
+        $(document).ready(function(){ 
+            $('select').styler();
+        });
+    </script>
+    
     <!-- Custom -->
     <script type='text/javascript' src="js/custom.js" defer></script>
 
