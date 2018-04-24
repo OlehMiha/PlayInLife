@@ -1645,6 +1645,7 @@ input.form_input_0:focus:required:invalid {
 
 
 
+/***** Bookmarks page *****/
 .content_bookmarks_page {
 
 }
@@ -1778,8 +1779,176 @@ input.form_input_0:focus:required:invalid {
 
 
 
+/***** Categories page *****/
+.content_categories_page {
+
+}
+.card_categories_page {
+    padding-bottom: 60px;
+}
+.baner_card_categories_page {
+    width: 100%;
+    height: 100px;
+    background: #dcdcdc;
+}
+.items_categories_page {
+    margin: 5px 13px;
+}
+.item_categories_page {
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 4.6px 0.4px rgba(0, 0, 0, 0.15);
+    min-width: calc(33.333% - 10px);
+    max-width: calc(33.333% - 10px);
+    min-height: 240px;
+    margin: 10px 5px;
+}
 
 
+.img_div_categories_page {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: #dcdcdc;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+}
+.title_div_categories_page {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.749);
+    color: #fff;
+}
+.img_div_categories_page_cat_9 {
+    background: url('../img/baner_cat_9.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.title_div_categories_page p {
+    float: left;
+    margin-left: 8px;
+    margin-top: -1px;
+}
+.title_div_categories_page span.ico {
+    display: block;
+    width: 34px;
+    height: 100%;
+    float: right;
+}
+.title_div_categories_page span.ico.ico_cat_1 {
+    background: url('../img/ico_sport.png') no-repeat;
+    background-position: center;
+}
+.title_div_categories_page span.ico.ico_cat_2 {
+    background: url('../img/ico_cat_2.png') no-repeat;
+    background-position: center;
+}
+.title_div_categories_page span.ico.ico_cat_3 {
+    background: url('../img/ico_cat_3.png') no-repeat;
+    background-position: center;
+}
+.title_div_categories_page span.ico.ico_cat_4 {
+    background: url('../img/ico_cat_4.png') no-repeat;
+    background-position: center;
+}
+.title_div_categories_page span.ico.ico_cat_5 {
+    background: url('../img/ico_cat_5.png') no-repeat;
+    background-position: center;
+}
+.title_div_categories_page span.ico.ico_cat_6 {
+    background: url('../img/ico_cat_6.png') no-repeat;
+    background-position: center;
+}
+.title_div_categories_page span.ico.ico_cat_7 {
+    background: url('../img/ico_cat_7.png') no-repeat;
+    background-position: center;
+}
+.title_div_categories_page span.ico.ico_cat_8 {
+    background: url('../img/ico_cat_8.png') no-repeat;
+    background-position: center;
+}
+.title_div_categories_page span.ico.ico_cat_9 {
+    background: url('../img/ico_cat_9.png') no-repeat;
+    background-position: center;
+}
+
+.text_categories_page {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.2;
+    min-height: 100px;
+    padding: 0 20px;
+}
+
+.button_ategories_page {
+    text-align: center;
+}
+
+
+
+
+
+/***** Iner Categories page *****/
+.item_categories_page.item_iner_categories_page {
+    min-height: auto;
+}
+.bread_crumbs {
+    height: 31px;
+    background: #fbc02d;
+    padding: 4px 18px;
+}
+
+.bread_crumbs a {
+    height: 31px;
+    background: #fbc02d;
+}
+.bread_crumbs a:after {
+    content: '>';
+    margin-left: 4px;
+    color: #000000;
+}
+.bread_crumbs a:last-child:after {
+    display: none;
+}
+
+.name_iner_categories_page {
+    
+}
+.name_iner_categories_page p {
+    padding: 6px 4px;
+    letter-spacing: -0.1px;
+    margin-bottom: -4px;
+    margin-top: -2px;
+}
+.name_iner_categories_page span.ico_name_cat_iner {
+    display: inline-block;
+    width: 23px;
+    height: 12px;
+    background: url('../img/ico_name_cat_iner.png') no-repeat;
+    background-position: center;
+    margin-left: 7px;
+    margin-bottom: -2px;
+}
+.title_div_categories_page span.ico.ico_cat_10 {
+    background: url('../img/ico_cat_10.png') no-repeat;
+    background-position: center;
+}
+
+
+
+
+/***** Category page *****/
+.items_categories_page.items_category_page {
+    margin: 16px 3px;
+}
+.card_categories_page.card_category_page {
+    padding-bottom: 0px;
+}
 
 
 
