@@ -200,6 +200,7 @@ a:hover {
 .all {
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 .left_col {
     max-width: 222px;
@@ -328,6 +329,18 @@ input.form_input_0:focus:required:invalid {
 .search_col{
     max-width: 220px;
 }
+.search_col_mobil {
+    display: none;
+}
+.search_col_mobil input{
+    width: 196px;
+    height: 25px;
+    background: #fafafa;
+}
+.search_col_mobil .search_div:before {
+    top: 8px;
+}
+
 .form_input_1 {
     font-family: 'HelveticaNeueCyrRoman';
     border: none;
@@ -366,12 +379,12 @@ input.form_input_0:focus:required:invalid {
 }
 
 
-
-.button_mobi_menu {
+.button_mobi_menu_off {
     display: none;
-    width: 50px;
-    height: 35px;
-    float: right;
+}
+.button_mobi_menu {
+    width: 30px;
+    height: 25px;
     position: relative;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -382,7 +395,6 @@ input.form_input_0:focus:required:invalid {
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
-    margin-top: 18px;
 }
 
 .button_mobi_menu span {
@@ -409,15 +421,15 @@ input.form_input_0:focus:required:invalid {
 }
 
 .button_mobi_menu  span:nth-child(2),.button_mobi_menu span:nth-child(3) {
-  top: 15px;
+  top: 10px;
 }
 
 .button_mobi_menu  span:nth-child(4) {
-  top: 30px;
+  top: 20px;
 }
 
 .button_mobi_menu.active span:nth-child(1) {
-  top: 15px;
+  top: 10px;
   width: 0%;
   left: 50%;
 }
@@ -437,54 +449,11 @@ input.form_input_0:focus:required:invalid {
 }
 
 .button_mobi_menu.active span:nth-child(4) {
-  top: 15px;
+  top: 10px;
   width: 0%;
   left: 50%;
 }
 
-.button_mobi_menu .buttom_menu_iner {
-    display: block;
-    width: 40px;
-    height: 2px;
-    background: #fff;
-
-    transform-origin: 0px 0px;
-    -moz-transform: rotate(0deg) translateY(0px) translateX(0px);
-    -ms-transform: rotate(0deg) translateY(0px) translateX(0px);
-    -webkit-transform: rotate(0deg) translateY(0px) translateX(0px);
-    -o-transform: rotate(0deg) translateY(0px) translateX(0px);
-    transform: rotate(0deg) translateY(0px) translateX(0px);
-    -webkit-transition: transform 1s;
-    -moz-transition: transform 1s;
-    -ms-transition: transform 1s;
-     -o-transition: transform 1s;
-        transition: transform 1s;
-}
-.button_mobi_menu .buttom_menu_iner_1 {
-    position: absolute;
-    top: 15px;
-    left: 0px;
-}
-.button_mobi_menu .buttom_menu_iner_2 {
-    position: absolute;
-    top: 25px;
-    left: 0px;
-}
-.button_mobi_menu.active .buttom_menu_iner_1 {
-    -moz-transform: rotate(27deg) translateY(-5px);
-    -ms-transform: rotate(27deg) translateY(-5px);
-    -webkit-transform: rotate(27deg) translateY(-5px);
-    -o-transform: rotate(27deg) translateY(-5px);
-    transform: rotate(27deg) translateY(-5px);
-}
-
-.button_mobi_menu.active .buttom_menu_iner_2 {
-    -moz-transform: rotate(-27deg) translateY(3px);
-    -ms-transform: rotate(-27deg) translateY(3px);
-    -webkit-transform: rotate(-27deg) translateY(3px);
-    -o-transform: rotate(-27deg) translateY(3px);
-    transform: rotate(-27deg) translateY(3px);
-}
 
 /* head container opacit */
 
@@ -526,7 +495,15 @@ input.form_input_0:focus:required:invalid {
     right: 6px;
 }
 .notifications_right{
-    
+    display: none;
+    height: 380px;
+    overflow: auto;
+}
+.notifications_right .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: rgba(30, 136, 229,0.75);
+}
+.notifications_right .mCS-dark-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: rgba(30, 136, 229,0.85);
 }
 .task {
     display: block;
@@ -622,11 +599,22 @@ input.form_input_0:focus:required:invalid {
 /* Menu LEFT */
 .leftbar {
     position: fixed;
-    width: 100%;
+    width: 219px;
+    height: calc(100vh - 70px);
     top: 55px;
+    overflow: auto;
+    z-index: 9999;
+    background: #fff;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+     -o-transition: all .5s;
+        transition: all .5s;
 }
-
-
+.leftbar .mCSB_inside > .mCSB_container {
+    margin-right: 16px;
+}
 .left_menu {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.871);
@@ -647,7 +635,7 @@ input.form_input_0:focus:required:invalid {
     margin-left: 10px;
     margin-bottom: 5px;
 }
-.left_menu ul:last-child:after {
+.left_menu ul.bot:after {
     display: none;
 }
 
@@ -742,7 +730,17 @@ input.form_input_0:focus:required:invalid {
     display: none;
 }
 
-
+.left_menu .help {
+    
+}
+.left_menu .help .help_iner{
+    width: 200px;
+    height: 150px;
+    background: #f1f1f1;
+    margin-top: 12px;
+    text-align: center;
+    line-height: 150px;
+}
 
 
 
@@ -832,9 +830,33 @@ input.form_input_0:focus:required:invalid {
 }
 
 .rank_level {
+    position: relative;
     text-align: center;
     margin: 0 5px;
     margin-top: 13px;
+}
+.rank_level_progres_bar {
+    position: absolute;
+    top: 54px;
+    left: 10%;
+    display: block;
+    width: 80%;
+    height: 14px;
+    border: 1px solid #e8e8e8;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.rank_level_progres_bar_iner {
+    position: relative;
+}
+.rank_level_progres_bar_iner > span {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: block;
+    width: 50%;
+    height: 14px;
+    background: #ffc002;
 }
 .rank_level_top, .rank_level_bot {
     background-color: rgb(30, 136, 229);
@@ -1116,7 +1138,7 @@ input.form_input_0:focus:required:invalid {
     margin-top: 10px;
 }
 .achievements {
-    margin-top: 13px;
+    margin-top: 8px;
     margin-bottom: 17px;
 }
 .achievements .achievements_item {
@@ -1124,7 +1146,7 @@ input.form_input_0:focus:required:invalid {
     background-color: rgb(221, 221, 221);;
     width: 69px;
     height: 69px;
-    margin: 0 8.5px;
+    margin: 4.5px 8.5px;
 }
 .a_href {
     color: #1e88e5;
@@ -1261,6 +1283,14 @@ input.form_input_0:focus:required:invalid {
     z-index: 10;
 }
 
+#clicker-zona {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
 .edit_iner a {
     color: rgb(82, 82, 82);
     line-height: 2.25;
@@ -1280,18 +1310,40 @@ input.form_input_0:focus:required:invalid {
     text-align: justify;
 }
 .post_bot {
-    position: relative;
     margin-top: 7px;
-    height: 42px;
+    min-height: 42px;
+}
+.post_bot .comment_write_div:before {
+    content: '';
+    clear: both;
+    display: block;
+    height: 10px;
+    margin-top: 10px;
+}
+.post_bot .comment_write_div {
+    display: none;
+}
+.post_bot .comment_write_div_iner {
+    position: relative;
+    margin-top: 24px;
+    min-height: 112px;
+    padding: 24px 0;
 }
 
-.post_bot .comment_write {
+.post_bot .comment_write_div_iner:before {
+    content: '';
     position: absolute;
-    display: none;
-    top: -62px;
-    left: -48px;
+    top: 0;
+    left: -70px;
+    display: block;
+    width: calc(100% + 82px);
+    height: 1px;
+    border-top: 1px solid #f3f3f3;
+}
+.post_bot .comment_write {
     border-radius: 8px;
     width: calc(100% + 57px);
+    margin-left: -57px;
     min-height: 40px;
     background: #fff;
     padding: 13px 7px;
@@ -1665,7 +1717,11 @@ input.form_input_0:focus:required:invalid {
     box-shadow: 0px 3px 4.75px 0.25px rgba(0, 0, 0, 0.15);
     margin: 0 10px;
     margin-bottom: 15px;
-    padding: 13px 0;
+    padding: 12px 0;
+    border: 1px solid #fff;
+}
+.task_bookmarks_gold {
+    border: 1px solid #ffc000;
 }
 .task_bookmarks_page span.link {
     position: absolute;
@@ -1934,9 +1990,11 @@ input.form_input_0:focus:required:invalid {
     margin-left: 7px;
     margin-bottom: -2px;
 }
-.title_div_categories_page span.ico.ico_cat_10 {
-    background: url('../img/ico_cat_10.png') no-repeat;
-    background-position: center;
+.title_div_categories_page span.ico.num_cat_text {
+    font-family: 'HelveticaNeueCyrRoman';
+    display: inline-block;
+    width: auto;
+    padding-right: 8px;
 }
 
 

@@ -10,28 +10,17 @@ $(document).ready(function(){
     },false);
     
 
-//Меню топ  
-var close = false;
+//Меню топ моб.
     $(".button_mobi_menu").on('click', function () {
         if ($(this).hasClass('active')) {
             $('.button_mobi_menu').removeClass("active");
-            close = false;
-            $('.menu_div').removeClass("active");
+            $('.leftbar_js').removeClass("active");
             return;
         }
         $('.button_mobi_menu').addClass("active");
-        $('.menu_div').addClass("active");
-        close = true;
+        $('.leftbar_js').addClass("active");
     }); 
 
-    $(".menu_top li:not(.price_menu_modal)").on('click', function () {
-        if(close = true){
-            $('.button_mobi_menu').removeClass("active");
-            $('.menu_div').removeClass("active");
-            close = false;
-        
-        }
-    }); 
 
 
 
@@ -64,14 +53,16 @@ var close = false;
         $(this).addClass('active');
         $(this).next(".clicker-iner_js").fadeIn(500);
         $(this).next(".clicker-iner_js").addClass('active');
+        $(this).next(".clicker-iner_js").append('<div id="clicker-zona"><div>');
     });
 
-    $(document).on('click','.clicker-iner_js a, .clicker-iner_js button', function (e) {
+    $(document).on('click','.clicker-iner_js a, .clicker-iner_js button, .clicker-iner_js #clicker-zona', function (e) {
         e.preventDefault();
         if ($(this).closest('.clicker-iner_js').hasClass('active')) {
             $(this).closest('.clicker-iner_js').removeClass("active");
             $(this).closest('.clicker-iner_js').prev('.clicker_js').removeClass("active");
             $(this).closest('.clicker-iner_js').fadeOut(500);
+            $("#clicker-zona").remove();
             return;
         }
         $(this).closest('.clicker-iner_js').addClass('active');
@@ -125,6 +116,25 @@ $('.view_comments_js').on('click', function (e) {
     $(this).find('a').text('Скрыть все комментарии');
 });
 
+
+
+//Menu notifications
+$(".notifications_iner_js." + $('.notifications_js li.active a').attr('href')).fadeIn(200);
+$('.notifications_js').on('click', 'li', function (e) {
+    e.preventDefault();
+    if ($(this).hasClass('active')) {
+        return;
+    }
+
+    var class_tab = $(this).find('a').attr('href');
+
+    $(".notifications_js li").removeClass('active');
+    $(".notifications_iner_js").css('display','none');
+
+    $(".notifications_iner_js." + class_tab).fadeIn(200);
+    $(this).addClass('active');
+});
+
 //Tabs
 $(".tab_js." + $('.tabs_js.active').attr('data-tab')).fadeIn(200);
 $('.tabs_js').on('click', function (e) {
@@ -159,7 +169,28 @@ $('.tabs_iner_js').on('click', function (e) {
     $(this).addClass('active');
 });
 
+//Progres bar Level Iner 
+$("#rank_level_progres_bar").change(function(event) {
+    setTimeout(function run() {
+        var value = parseInt($("#rank_level_progres_bar").val());
+        var min = parseInt($("#rank_level_progres_bar").attr('min'));
+        var max = parseInt($("#rank_level_progres_bar").attr('max'));
 
+        if(value > max)
+        {
+            value = max;
+        } 
+        else if (value < min ) 
+        {
+            value = min;
+        }
+
+        $(".rank_level_progres_bar_iner span").css('width', (value * 100 / max) + "%");
+      
+
+        setTimeout(run, 0);
+    }, 0);
+}).change();
 
 //Меню топ скрол
     var h = $(window).height();

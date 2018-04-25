@@ -25,6 +25,39 @@
 
 /* Большие девайсы (десктопы, <= 991px) */
 @media only screen and (max-width: 991px) { 
+    .left_col {
+        max-width: 0px;
+        padding: 0;
+    }
+    .menu_div .left_col {
+        max-width: 100%;
+    }
+    .menu_div {
+        height: 50px;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .card {
+        max-width: 100%;
+    }
+
+    .leftbar {
+        transform: translateX(-100%);
+    }
+    .leftbar.active {
+        transform: translateX(0%);
+    }
+    .search_col_mobil, .button_mobi_menu_off {
+        display: block;
+    }
+    .search_col_mobil_off {
+        display: none;
+    }
+
+
+
+
 
     .container {
         max-width: 100%;
