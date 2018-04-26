@@ -15,13 +15,17 @@ $(document).ready(function(){
         if ($(this).hasClass('active')) {
             $('.button_mobi_menu').removeClass("active");
             $('.leftbar_js').removeClass("active");
+            $("#mobi-menu-zona").remove();
             return;
         }
         $('.button_mobi_menu').addClass("active");
         $('.leftbar_js').addClass("active");
+        $(".all").append('<div id="mobi-menu-zona"><div>');
     }); 
 
-
+    $(document).on('click','#mobi-menu-zona', function (e) {
+        $(".button_mobi_menu").trigger('click');
+    });
 
 
 

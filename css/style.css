@@ -216,8 +216,14 @@ a:hover {
     background-position: center;
 }
 .icon.icon_not {
+    background: url('../img/notificationOff.png') no-repeat;
+    background-position: center;    
+    background-size: cover;
+}
+.icon.icon_not.new {
     background: url('../img/notificationOn.png') no-repeat;
-    background-position: center;
+    background-position: center;    
+    background-size: cover;
 }
 .icon.icon_exit {
     background: url('../img/exit.png') no-repeat;
@@ -282,6 +288,15 @@ input.form_input_0:focus:required:invalid {
 .menu_div_off.active {
     display: block;
 }
+.desctop_left_menu {
+    display: block;
+}
+.mobile_left_menu {
+    display: none;
+}
+
+
+
 .menu_div .container, .menu_div .row {
     height: 100%;
 }
@@ -328,9 +343,6 @@ input.form_input_0:focus:required:invalid {
 
 .search_col{
     max-width: 220px;
-}
-.search_col_mobil {
-    display: none;
 }
 .search_col_mobil input{
     width: 196px;
@@ -603,7 +615,7 @@ input.form_input_0:focus:required:invalid {
     height: calc(100vh - 70px);
     top: 55px;
     overflow: auto;
-    z-index: 9999;
+    z-index: 99999;
     background: #fff;
 
     -webkit-transition: all .5s;
@@ -612,6 +624,16 @@ input.form_input_0:focus:required:invalid {
      -o-transition: all .5s;
         transition: all .5s;
 }
+#mobi-menu-zona {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99998;
+}
+
+
 .leftbar .mCSB_inside > .mCSB_container {
     margin-right: 16px;
 }
@@ -712,6 +734,14 @@ input.form_input_0:focus:required:invalid {
     background: url('../img/ico_m_11.png') no-repeat;
     background-position: center;
 }
+.icon_m.icon_m_12 {
+    background: url('../img/ico_m_12.png') no-repeat;
+    background-position: center;
+}
+.icon_m.icon_m_13 {
+    background: url('../img/ico_m_13.png') no-repeat;
+    background-position: center;
+}
 
 
 .left_menu span.lable {
@@ -764,6 +794,7 @@ input.form_input_0:focus:required:invalid {
     max-width: 700px; 
     padding-bottom: 10px;
     margin-bottom: 18px;
+    border: none;
 }
 
 
@@ -918,7 +949,7 @@ input.form_input_0:focus:required:invalid {
     border-radius: 13px;
     background: #171717;
     color: #fff;   
-    margin-top: 6px;
+    margin-top: 8px;
     margin-right: 14px;
     padding: 0 5px;
 }
@@ -997,6 +1028,7 @@ input.form_input_0:focus:required:invalid {
     height: 100%;
     z-index: 10;
     background: url("../img/ava.jpg") no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
@@ -1037,7 +1069,40 @@ input.form_input_0:focus:required:invalid {
     display: block;
 }
 
+.mob_ico_btc_user {
+    display: none;
+    padding-top: 20px;
+    height: 40px;
+}
+.mob_ico_btc_user .mob_ico_btc {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 27px;
+}
+.mob_ico_btc_user .mob_ico_btc:first-child {
+    margin-left: 0px;
+}
+.mob_ico_btc_user .mob_ico_btc.mob_ico_btc_1 {
+    background: url("../img/message_mobi.png") no-repeat;
+    background-position: center;
+    background-color: rgb(251, 192, 45);
+}
+.mob_ico_btc_user .mob_ico_btc.mob_ico_btc_2 {
+    background: url("../img/add_mobi.png") no-repeat;
+    background-position: center;
+    background-color: rgb(251, 192, 45);
+}
+.mob_ico_btc_user .mob_ico_btc.mob_ico_btc_3 {
+    background: url("../img/statistika_mobi.png") no-repeat;
+    background-position: center;
+    background-color: rgb(251, 192, 45);
+}
 
+.mob_ico_btc_user .mob_ico_btc:hover {
+    box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24),0px 2px 5.88px 0.12px rgba(0, 0, 0, 0.16);
+}
 
 
 
@@ -1046,7 +1111,7 @@ input.form_input_0:focus:required:invalid {
     left: 0;
     bottom: 0;
     display: none;
-    width: 175px;
+    width: 100%;
     height: 21px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.749);
@@ -1140,6 +1205,8 @@ input.form_input_0:focus:required:invalid {
 .achievements {
     margin-top: 8px;
     margin-bottom: 17px;
+    height: 78px;
+    overflow: hidden;
 }
 .achievements .achievements_item {
     border-radius: 5px;

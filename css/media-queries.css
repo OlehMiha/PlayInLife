@@ -29,14 +29,24 @@
         max-width: 0px;
         padding: 0;
     }
+
+
+    .desctop_left_menu {
+        display: none;
+    }
+    .mobile_left_menu {
+        display: block;
+    }
     .menu_div .left_col {
         max-width: 100%;
     }
-    .menu_div {
-        height: 50px;
-    }
     .logo {
+        width: 115px;
+        height: 37px;
+        background: url('../img/Logo_mob.png') no-repeat;
+        background-position: center;
         margin: 0 auto;
+        margin-top: -4px;
     }
     .card {
         max-width: 100%;
@@ -44,20 +54,22 @@
 
     .leftbar {
         transform: translateX(-100%);
+        height: 100vh;
+        top: 0;
     }
     .leftbar.active {
         transform: translateX(0%);
     }
+    .left_menu .help .help_iner {
+        margin-left: 10px;
+    }
+
     .search_col_mobil, .button_mobi_menu_off {
         display: block;
     }
-    .search_col_mobil_off {
+    .mobil_off {
         display: none;
     }
-
-
-
-
 
     .container {
         max-width: 100%;
@@ -86,8 +98,15 @@
     .button_mobi_menu {
         display: block;
     }
-
-   
+    
+    .icon_not {
+        width: 30px;
+        height: 30px;
+    }
+   .button_header_div {
+        margin-right: 5px;
+        padding-top: 0px;
+    }
 }
 
 /* Средние девайсы («таблетки», <= 767px) */
@@ -95,16 +114,146 @@
     
 }
 
+@media only screen and (max-width: 649px) { 
+    .col_content_mid {
+        padding: 0;
+    }
+    .content {
+        padding-top: 0px;
+    }
+    .header_card {
+        border-radius: 0;
+    }
+    .background_card {
+        height: 74px;
+    }
+    .background_card .status_card {
+        display: none;
+    }
+
+    .avatar_div {
+        margin-top: -60px;
+        width: 120px;
+        height: 120px;
+        float: left;
+    }
+
+    .avatar_div:hover .message, .avatar_div:hover .add {
+        display: none;
+    }
+    .mob_ico_btc_user{
+        display: block;
+        float: right;
+    }
+    .info_card {
+        height: auto;
+    }
+    .info_card .col:first-child {
+        min-width: 100%;
+        margin-bottom: 75px;
+    }
+
+    .info_level {
+        height: 60px;
+        margin: 0;
+        margin-top: -120px;
+        margin-bottom: 67px;
+    }
+    .achievements_div {
+        border-top: 1px solid #f3f3f3;
+    }
+
+
+    .info_level a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .info_level a span {
+        display: none;
+    }
+}
+
 /* Малые девайсы («ландшафтные телефоны», <= 575px) */
 @media only screen and (max-width: 575px) {
     
 }
 
-@media only screen and (max-width: 490px) {
-   
+@media only screen and (max-width: 540px) {
+   .info_card .num {
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 15px;
+    }
+    .info_card .info_title {
+        font-size: 10px;
+    }
+    .info_level {
+        margin-top: -110px;
+    }
+    .achievements .achievements_item {
+        margin: 5px 7px;
+    }
+
+
+    .posts_left {
+        max-width: 0px;
+    }
+    .posts_user, .posts_data {
+        padding-left: 60px;
+    }
+    .posts_data {
+        margin-bottom: 10px;
+    }
+    .post_bot .post_bot_likes {
+        margin-left: 0px; 
+    }
+
+    .post_bot .comment_write {
+        border-radius: 0px;
+        width: 100%;
+        margin-left: 0px;
+        min-height: 110px;
+        background: #fff;
+        padding: 13px 7px;
+        padding-bottom: 12px;
+    }
+    .comment_write .comment_text textarea {
+        width: calc(100% - 20px);
+        min-height: 50px;
+    }
+
+    .comment_write .comment_submit {
+        max-width: 100%;
+        min-width: 100%;
+        text-align: center;
+        padding-right: 0px;
+    }
+    .comment_submit .button_1 {
+        float: none;
+    }
+    .post_bot .comment_write_div {
+        margin: 0 -12px;
+    }
+    .post_bot .comment_write_div_iner {
+        margin-top: 0px;
+        padding: 0;
+    }
+    .post_bot .comment_write_div_iner:before {
+        display: none;
+    }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 359px) {
    
+    .mob_ico_btc_user .mob_ico_btc {
+        margin-left: 10px;
+    }
+    .mob_ico_btc_user .mob_ico_btc:first-child {
+        margin-left: 0px;
+    }
 }
 
 /* IPhone 5 */
