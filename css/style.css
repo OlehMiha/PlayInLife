@@ -309,7 +309,7 @@ input.form_input_0:focus:required:invalid {
     -ms-transition: height .5s;
      -o-transition: height .5s;
         transition: height .5s;
-    z-index: 11000;
+    z-index: 900;
     background: #1e88e5;
 }
 .menu_div.scroll {
@@ -615,7 +615,7 @@ input.form_input_0:focus:required:invalid {
     height: calc(100vh - 70px);
     top: 55px;
     overflow: auto;
-    z-index: 99999;
+    z-index: 999;
     background: #fff;
 
     -webkit-transition: all .5s;
@@ -630,7 +630,7 @@ input.form_input_0:focus:required:invalid {
     height: 100%;
     left: 0;
     top: 0;
-    z-index: 99998;
+    z-index: 998;
 }
 
 
@@ -1027,9 +1027,6 @@ input.form_input_0:focus:required:invalid {
     width: 100%;
     height: 100%;
     z-index: 10;
-    background: url("../img/ava.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .avatar_div .add {
@@ -1260,6 +1257,10 @@ input.form_input_0:focus:required:invalid {
 .wall_text_buttons {
     margin: 0 15px;
     margin-top: 6px;
+}
+.wall_text_button {
+    max-width: 175px;
+    padding:0;
 }
 .wall_text_buttons .button_1 {
     margin-left: 9px;
@@ -2109,12 +2110,14 @@ input.form_input_0:focus:required:invalid {
 
 /* Modal */
 .modal {
-    z-index: 100500;
+    z-index: 99999;
 }
 .modal-dialog {
+    width: 100%;
     max-width: 830px;
 }
 .modal .modal-dialog_1 {
+    width: 100%;
     max-width: 420px;
     margin-top: 80px;
     text-align: center;
@@ -2144,7 +2147,7 @@ input.form_input_0:focus:required:invalid {
 }
 
 .modal_top {
-    border-radius: 8px 8px 0 0;
+    border-radius: 6px 6px 0 0;
     height: 30px;
     background: #0a9be3;
     color: #fff;
@@ -2172,6 +2175,7 @@ input.form_input_0:focus:required:invalid {
 }
 
 .modal .modal-dialog_2 {
+    width: 100%;
     max-width: 700px;
     text-align: center;
 }
@@ -2192,6 +2196,7 @@ input.form_input_0:focus:required:invalid {
     display: inline-block;
 }
 .modal_top_2 .modal_top_2_r {
+    width: 100%;
     max-width: 300px;
     float: right;
     text-align: right;
@@ -2278,6 +2283,7 @@ input.form_input_0:focus:required:invalid {
 
 
 .modal .modal-dialog_4 {
+    width: 100%;
     max-width: 800px;
     text-align: center;
 }
@@ -2314,16 +2320,171 @@ input.form_input_0:focus:required:invalid {
 
 
 .modal .modal-dialog_5 {
+    width: 100%;
     max-width: 520px;
     text-align: center;
 }
 
+.modal-dialog_5 .modal_top{
+    text-align: left;
+    height: 50px;
+}
+.modal-dialog_5 .modal_top .ava {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #e2e2e2;
+    border-radius: 50%;
+    margin-left: 13px; 
+    margin-right: 15px;
+    margin-bottom: -13px;
+}
+.modal-dialog_5 textarea {
+    min-height: 165px;
+}
+.modal-dialog_5 .wall_text_buttons  {
+    margin-bottom: 5px;
+}
 
 
 
+.modal .modal-dialog_7 {
+    width: 100%;
+    max-width: 332px;
+    text-align: center;
+}
+.modal-dialog_7 .item_like_modal {
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+    background: #e2e2e2;
+    border-radius: 50%;
+    margin: 5px;
+}
+.modal-dialog_7 .custom_scrollbar {
+    height: 215px;
+}
 
 
 
+.modal .modal-dialog_8 {
+    width: 100%;
+    max-width: 340px;
+    text-align: center;
+}
+.modal-dialog_8 form {
+    font-size: 12px;
+    text-align: left;
+    padding: 7px;
+}
+
+.modal-dialog_8 form p {
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.2;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.modal-dialog_8 form input {
+    width: 100%;
+    height: 25px;
+    border: 1px solid #e2e2e2;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.modal-dialog_8 form textarea {
+    width: 100%;
+    height: 113px;
+    border: 1px solid #e2e2e2;
+    padding: 5px 0;
+    padding-left: 10px;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 10px;
+}
+.modal-dialog_8 form .button_1 {
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+
+.modal .modal-dialog_9 {
+    width: 100%;
+    max-width: 340px;
+    text-align: center;
+}
+.modal-dialog_9 form {
+    font-size: 12px;
+    text-align: left;
+    padding: 7px;
+}
+
+.modal-dialog_9 form p {
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.2;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.modal-dialog_9 form input[type="radio"] {    
+    display: none;
+}
+.modal-dialog_9 form input[type="radio"]:checked + .checkbox_div:before { 
+    content: '';   
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    background: #0a9be3;
+}
+.modal-dialog_9 form .checkbox_div {  
+    position: relative;  
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #0a9be3;
+    margin-bottom: -2px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.modal-dialog_9 form .radio p {
+    display: inline-block;
+}
+.modal-dialog_9 .radio label {
+    cursor: pointer;
+    margin: 0;
+}
+.modal-dialog_9 .custom_scrollbar {
+    height: 120px;
+}
+
+.modal-dialog_9 .div_p a {
+    display: block;
+    height: 46px;
+    min-width: 100%;
+    margin: 10px 0;
+}
+.modal-dialog_9 .div_p a:hover, .modal-dialog_9 .div_p a.active {
+    background: #e5e5e5;
+}
+
+
+.modal-dialog_9 .div_p .ava {
+    width: 40px;
+    height: 40px;
+    background: #cbcbcb;
+    display: inline-block;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+.modal-dialog_9 .div_p p {
+    margin: 0;
+    line-height: 46px;
+}
 
 
 /* Animate */
@@ -2335,4 +2496,13 @@ input.form_input_0:focus:required:invalid {
 }
 .mov_div div {
     opacity: 0;
+}
+
+
+
+
+
+
+.demo_modal > div {
+    margin: 5px 0;
 }

@@ -168,7 +168,7 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        line-height: 40px;
+        line-height: 42px;
         text-align: center;
         font-weight: bold;
     }
@@ -183,6 +183,11 @@
 }
 
 @media only screen and (max-width: 540px) {
+    .status {
+        margin-right: 7px;
+    }
+
+
    .info_card .num {
         font-size: 18px;
         line-height: 20px;
@@ -192,10 +197,7 @@
         font-size: 10px;
     }
     .info_level {
-        margin-top: -110px;
-    }
-    .achievements .achievements_item {
-        margin: 5px 7px;
+        margin-top: -114px;
     }
 
 
@@ -245,7 +247,79 @@
     .post_bot .comment_write_div_iner:before {
         display: none;
     }
+   
+    .achievements {
+        height: auto;
+        overflow: hidden;
+    }
+    .achievements .achievements_item {
+        display: none;
+        position: relative;
+        width: calc(25% - 18px);
+        height: auto;
+    }
+    .achievements .achievements_item:nth-child(1), .achievements .achievements_item:nth-child(2), 
+    .achievements .achievements_item:nth-child(3), .achievements .achievements_item:nth-child(4) {
+        display: block;
+    }
+    .achievements .achievements_item::before {
+        content: "";
+        display: block;
+        padding-top: 100%; /* С помощью этого padding мы задаем высоту равную ширине блока */
+    }
+    .achievements .achievements_item {
+        margin: 5px 9px;
+    }
+    .achievements_div {
+        margin: 0;
+        padding: 0 16px;
+    }
+    .achievements {
+        margin-bottom: 5px;
+    }
+    .wall_text_buttons {
+        margin: 0 10px;
+        margin-top: 6px;
+    }
+    .add_wall_buttons {
+        margin-right: 30px;
+    }
+    .wall_text_buttons a.add_wall_buttons:last-child {
+        margin-right: 0px;
+    }
+    .add_wall_buttons {
+        max-width: 50px;
+    }
+    .wall_text_button {
+        max-width: 100%;
+    }
+
+    .info_card .info_block {
+        height: 60px;
+    }
+    .info_level {
+        margin-top: -116px;
+        margin-bottom: 60px;
+    }
+    .wall_text_buttons .button_1 {
+        float: right;
+    }
+
+    .post_bot a {
+        margin: 0px;
+        width: 35px;
+    }
+    .post_bot a:last-child {
+        margin-left: -2px;
+    }
 }
+
+@media only screen and (max-width: 379px) {
+    .add_wall_buttons {
+        margin-right: 26px;
+    }
+}
+
 @media only screen and (max-width: 359px) {
    
     .mob_ico_btc_user .mob_ico_btc {
@@ -254,9 +328,15 @@
     .mob_ico_btc_user .mob_ico_btc:first-child {
         margin-left: 0px;
     }
+    .add_wall_buttons {
+        margin-right: 20px;
+    }
 }
 
 /* IPhone 5 */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 340px) {
 
+    .add_wall_buttons {
+        margin-right: 15px;
+    }
 }
