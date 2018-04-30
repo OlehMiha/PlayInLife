@@ -307,7 +307,7 @@
 
     .post_bot a {
         margin: 0px;
-        width: 35px;
+        width: 44px;
     }
     .post_bot a:last-child {
         margin-left: -2px;
@@ -330,6 +330,11 @@
     }
     .add_wall_buttons {
         margin-right: 20px;
+    }
+
+    .post_bot a {
+        margin: 0px;
+        width: 36px;
     }
 }
 
