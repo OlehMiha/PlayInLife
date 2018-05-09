@@ -2222,6 +2222,14 @@ input.form_input_0:focus:required:invalid {
    text-decoration: underline;
 }
 
+
+/***** News page *****/
+.card_news_page {
+    margin-top: 20px;
+}
+
+
+
 /* Footer */
 .footer_div {
     font-family: 'Open Sans', sans-serif;
