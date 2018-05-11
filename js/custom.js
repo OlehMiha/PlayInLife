@@ -173,6 +173,20 @@ $('.tabs_iner_js').on('click', function (e) {
     $(this).addClass('active');
 });
 
+//Achievements ver
+$('.button_achievements_v_js').on('click', function (e) {
+    e.preventDefault();
+
+    $(".achievements_v1").css('display','none');
+    $(".achievements_v2").fadeIn();
+});
+$('#achievements_back').on('click', function (e) {
+    e.preventDefault();
+
+    $(".achievements_v2").css('display','none');
+    $(".achievements_v1").fadeIn();
+});
+
 //Progres bar Level Iner 
 $("#rank_level_progres_bar").change(function(event) {
     setTimeout(function run() {

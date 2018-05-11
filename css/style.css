@@ -2229,6 +2229,163 @@ input.form_input_0:focus:required:invalid {
 }
 
 
+/***** Achievements page *****/
+.baner_achievements_page {
+    background: url('../img/achievements_baner.jpg') no-repeat;
+    background-size: cover;
+}
+.achievements_level {
+    margin: 0 15px;
+    padding-top: 28px;
+    margin-bottom: -33px;
+}
+
+.card_achievements_page {
+    padding-top: 10px;
+}
+.card_achievements_page .achievements_div .achievements {
+    margin-top: 16px;
+}
+.card_achievements_page .achievements_div p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.871);
+}
+
+.card_achievements_page .achievements_div p span {
+    display: inline-block;
+    width: 17px;
+    height: 21px;
+    background: url("../img/achievements.png") no-repeat;
+    background-position: center;
+    margin-right: 9px;
+    margin-bottom: -4px;
+}
+.card_achievements_page .achievements_div p span.stat {
+    background: url("../img/statistical-chart.png") no-repeat;
+    background-position: center;
+}
+.card_achievements_page .achievements_div p span.list {
+    background: url("../img/list.png") no-repeat;
+    background-position: center;
+}
+.achievements_div_button_achievements_page {
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 17px;
+}
+
+
+.card-mini {
+    margin: 7px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.15);
+    min-height: 50px;
+    min-width: calc(50% - 14px);
+}
+.achievements_mini_card {
+    padding: 0 5px;
+    padding-top: 11px;
+    padding-bottom: 20px;
+}
+.achievements_mini_card .ico {
+    max-width: 50px;
+}
+.achievements_mini_card .ico span {
+    display: inline-block;
+    height: 38px;
+    width: 44px;
+    background: url(../img/planer.png) no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.achievements_mini_card .ico span.ico1 {
+    background: url("../img/achievements.png") no-repeat;
+    background-position: center;
+}
+.achievements_mini_card .ico span.ico2 {
+    background: url(../img/friends.png) no-repeat;
+    background-position: center;
+}
+.achievements_mini_card .ico span.ico3 {
+    background: url(../img/movie-clapper-open.png) no-repeat;
+    background-position: center;
+}
+.achievements_mini_card .ico span.ico4 {
+    background: url(../img/images_foto.png) no-repeat;
+    background-position: center;
+}
+.achievements_mini_card .status_num {
+    max-width: 65px;
+    text-align: right;
+    padding-right: 13px;
+}
+
+
+.iner_achievements_all{
+    
+}
+.top_iner_achievements_all{
+    height: 30px;   
+    background: #ffc000;
+    padding-left: 14px;
+    padding-right: 21px;
+}
+.top_iner_achievements_all a {
+    float: left;
+    display: inline-block;
+    width: 16px;   
+    height: 16px;
+    background: url("../img/ic_arrow_back_l.png") no-repeat;
+    background-position: center;
+    margin-top: 8px;
+}
+.top_iner_achievements_all .select_div {
+    width: 145px;
+    float: right;
+    margin-top: -8px;
+    text-align: right;
+}
+
+.top_iner_achievements_all .jq-selectbox__dropdown {
+    top: 22px !important;
+    right: -2px !important;
+    left: auto !important;
+    text-align: left !important;
+}
+.top_iner_achievements_all .jq-selectbox .jq-selectbox__select-text{
+    font-size: 12px !important;
+}
+.card_achievements_page.bot_iner_achievements_all .achievements_div p span {
+    width: 28px;
+    height: 28px;
+    background: url("../img/planer.png") no-repeat;
+    background-position: center;
+    margin-bottom: -11px;
+    margin-right: 6px;
+}
+.card_achievements_page.bot_iner_achievements_all .achievements {
+    margin-top: 16px;
+    margin-bottom: 22px;
+    height: auto;
+    overflow: hidden;
+}
+.card_achievements_page.bot_iner_achievements_all .achievements:first-child {
+    margin-top: 8px;
+}
+.card_achievements_page.bot_iner_achievements_all .achievements .achievements_item {
+    border-radius: 5px;
+    background-color: rgb(221, 221, 221);
+    width: 69px;
+    height: 69px;
+    margin: 8.5px;
+}
+.achievements_v2 {
+    display: none;
+}
+
 
 /* Footer */
 .footer_div {
