@@ -2257,6 +2257,7 @@ input.form_input_0:focus:required:invalid {
 .form_top_div_add_file_bookmark .foto .col,
 .form_top_div_add_file_bookmark .video .col {
     max-width: 100px;
+    min-width: 100px;
     height: 100px;
     background: #dcdcdc;
     margin: 5px;
@@ -2471,6 +2472,14 @@ input.form_input_0:focus:required:invalid {
     text-align: left;    
     min-width: 41.5%;  
     max-width: 41.5%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .rating_table .col_table_3 {
 
@@ -2479,7 +2488,7 @@ input.form_input_0:focus:required:invalid {
 
 }
 .rating_table .col_table_5 {
-    min-width: 110px;
+    min-width: 120px;
     max-width: 19%;
 }
 
@@ -2498,6 +2507,7 @@ input.form_input_0:focus:required:invalid {
 }
 .rating_mid_table .ava_table {
     width: 40px;
+    min-width: 40px;
     height: 40px;
     border-radius: 50%;
     background: #c7c6c6;

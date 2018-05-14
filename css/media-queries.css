@@ -111,7 +111,49 @@
 
 /* Средние девайсы («таблетки», <= 767px) */
 @media only screen and (max-width: 767px) { 
-    
+    .content {
+        padding-top: 0px;
+    }
+
+    .content > .container > .row > .col {
+        padding: 0px;
+    }
+
+    .items_categories_page {
+        margin: 5px 0px;
+    }
+    .tabs_friends_page {
+        margin: 0;
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+
+    .users_bookmark_page {
+        margin: 20px 15px;
+    }
+    .users_bookmark_page .user_bookmark_page {
+        position: relative;
+        width: calc(100% - 8px);
+        height: auto;
+    }
+    .users_bookmark_page .user_bookmark_page:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+    }
+
+    .form_top_div_add_file_bookmark .foto .col,
+    .form_top_div_add_file_bookmark .video .col {
+        max-width: calc(25% - 10px);
+        min-width: calc(25% - 10px);
+        height: auto;
+    }
+    .form_top_div_add_file_bookmark .foto .col:before,
+    .form_top_div_add_file_bookmark .video .col:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+    }
 }
 
 @media only screen and (max-width: 649px) { 
@@ -175,18 +217,38 @@
     .info_level a span {
         display: none;
     }
+
+    .baner_rating_page {
+        background: url(../img/rating_mob.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 150px;
+    }
 }
 
+@media only screen and (max-width: 600px) {
+    .item_categories_page {
+        min-width: calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
 /* Малые девайсы («ландшафтные телефоны», <= 575px) */
 @media only screen and (max-width: 575px) {
-    
+    .task_bookmarks_page {
+        min-width: 100%;
+        border-radius: 0px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .task_bookmarks_page p,.task_bookmarks_page h4 {
+        padding-right: 25px;
+    }
 }
 
 @media only screen and (max-width: 540px) {
     .status {
         margin-right: 7px;
     }
-
 
    .info_card .num {
         font-size: 18px;
@@ -314,6 +376,85 @@
     }
 }
 
+@media only screen and (max-width: 520px) {
+    
+    .baner_rating_page {
+        background: url(../img/rating_mob.jpg) no-repeat;
+        background-position: center right;
+        background-size: cover;
+        height: 100px;
+    }
+    .rating_head_table {
+        font-size: 10px;
+        padding: 0;
+    }
+    .rating_table .jq-selectbox {
+        margin-top: 5px;
+    }
+    .rating_mid_table {
+        font-size: 10px;
+        padding: 0;
+    }
+    .rating_mid_table .ava_table {
+        width: 25px;
+        min-width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin: -10px 0;
+        margin-left: 4px;
+        margin-right: 5px;
+    }
+    .rating_table .col_table_5 {
+        min-width: 100px;
+    }
+    .rating_table .col_table_2 {
+        min-width: 34.5%;
+    }
+    .rating_table .col_table_1 {
+        min-width: 10%;
+        padding-left: 10px;
+    }
+    .form_top_div_add_file_bookmark .foto .col,
+    .form_top_div_add_file_bookmark .video .col {
+        max-width: calc(33.333% - 10px);
+        min-width: calc(33.333% - 10px);
+        height: auto;
+    }
+    .form_top_div_add_file_bookmark .back {
+            position: static;
+    width: 50%;
+    height: 30px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    }
+    .button_top_div_add_file_bookmark .button_1 {
+        margin: 0 5px;
+        width: calc(50% - 12px);
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .button_ategories_page .button_1{
+        width: 140px;
+    }
+    .text_categories_page {
+        font-size: 10px;
+    }
+    .title_div_categories_page p {
+        margin-left: 5px;
+        margin-top: 2px;
+        font-size: 11px;
+    }
+
+    .bread_crumbs {
+        font-size: 10px;
+        padding: 8px 15px;
+    }
+
+    .users_bookmark_page {
+        margin: 10px 5px;
+    }
+}
 @media only screen and (max-width: 379px) {
     .add_wall_buttons {
         margin-right: 26px;
