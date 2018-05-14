@@ -174,17 +174,17 @@ $('.tabs_iner_js').on('click', function (e) {
 });
 
 //Achievements ver
-$('.button_achievements_v_js').on('click', function (e) {
+$('#button_card_block_v_js').on('click', function (e) {
     e.preventDefault();
 
-    $(".achievements_v1").css('display','none');
-    $(".achievements_v2").fadeIn();
+    $(".card_block_v1").css('display','none');
+    $(".card_block_v2").fadeIn();
 });
-$('#achievements_back').on('click', function (e) {
+$('#card_block_back').on('click', function (e) {
     e.preventDefault();
 
-    $(".achievements_v2").css('display','none');
-    $(".achievements_v1").fadeIn();
+    $(".card_block_v2").css('display','none');
+    $(".card_block_v1").fadeIn();
 });
 
 //Progres bar Level Iner 

@@ -2222,6 +2222,55 @@ input.form_input_0:focus:required:invalid {
    text-decoration: underline;
 }
 
+.form_top_div_add_file_bookmark {
+    padding-left: 18px;
+    padding-right: 12px;
+    padding-bottom: 20px;
+}
+.button_top_div_add_file_bookmark {
+    position: relative;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 25px;
+}
+.button_top_div_add_file_bookmark .button_1 {
+    margin: 0 8px;
+}
+.form_top_div_add_file_bookmark .back {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('../img/ic_arrow_forward.png') no-repeat;
+    background-position: left center;
+}
+.form_top_div_add_file_bookmark h3 {
+    margin-bottom: 7px;
+}
+.form_top_div_add_file_bookmark .foto, 
+.form_top_div_add_file_bookmark .video {
+    margin: 0 -5px;
+    margin-bottom: 7px;
+}
+.form_top_div_add_file_bookmark .foto .col,
+.form_top_div_add_file_bookmark .video .col {
+    max-width: 100px;
+    height: 100px;
+    background: #dcdcdc;
+    margin: 5px;
+}
+
+.form_top_div_add_file_bookmark .load_progres {
+
+}
+.form_top_div_add_file_bookmark .load_progres p {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.541);
+    padding-left: 1px;
+}
+
 
 /***** News page *****/
 .card_news_page {
@@ -2382,7 +2431,104 @@ input.form_input_0:focus:required:invalid {
     height: 69px;
     margin: 8.5px;
 }
-.achievements_v2 {
+
+
+
+/***** Rating page *****/
+.baner_rating_page {
+    background: url('../img/rating.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.rating_head_table {
+    background: #ffc000;
+    height: 30px;
+    padding: 0 8px;
+    font-size: 12px;
+}
+
+.rating_table {
+    margin: 0;
+    text-align: center;
+}
+.rating_table .jq-selectbox {
+    margin-top: 6px;
+    margin-left: 6px;
+}
+.rating_table .jq-selectbox__dropdown {
+    font-size: 14px;
+    text-align: left;
+    top: 16px !important;
+}
+.rating_table .col_table_1 {
+    text-align: left;
+    min-width: 7%;
+    max-width: 7%;
+    padding-left: 15px;
+}
+.rating_table .col_table_2 {
+    text-align: left;    
+    min-width: 41.5%;  
+    max-width: 41.5%;
+}
+.rating_table .col_table_3 {
+
+}
+.rating_table .col_table_4 {
+
+}
+.rating_table .col_table_5 {
+    min-width: 110px;
+    max-width: 19%;
+}
+
+
+.rating_mid_table {
+    padding: 0 8px;
+    font-size: 12px;
+    padding-top: 14px;
+}
+.rating_mid_table .rating_table {
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.15);
+    min-height: 50px;
+    margin-bottom: 15px;
+}
+.rating_mid_table .ava_table {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #c7c6c6;
+    float: left;
+    margin: -10px 0;
+    margin-left: 4px;
+    margin-right: 9px;
+}
+
+
+.rating_bot_table {
+    border-top: 1px solid #eaeaea;
+    margin-top: 5px;
+    padding-top: 19px;
+}
+.rating_bot_table .rating_table{
+    border: 1px solid #ffc000;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Card block */
+.card_block_v2 {
     display: none;
 }
 
