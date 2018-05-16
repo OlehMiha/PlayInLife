@@ -1417,7 +1417,8 @@ input.form_input_0:focus:required:invalid {
     background: #fff;
     padding: 13px 7px;
     padding-bottom: 0px;
-    box-shadow: 0px -3px 9.5px 0.5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.15);
+    /*box-shadow: 0px -3px 9.5px 0.5px rgba(0, 0, 0, 0.15);*/
 }
 .comment_write .comment_smile {
     max-width: 42px;
@@ -1588,7 +1589,9 @@ input.form_input_0:focus:required:invalid {
     background-color: #ffc000;
     color: rgba(0, 0, 0, 0.871);
 }
-
+.tabs_friends_page a span {
+    margin-left: 3px;
+}
 .card_search_friends_page {
     margin-top: 20px;
     padding-bottom: 0;
@@ -1625,6 +1628,9 @@ input.form_input_0:focus:required:invalid {
 .card_friend_tab_div {
     margin: 0;
     padding-top: 7px;
+}
+.card_friend_tab_div .add_to_friend_tab_div{
+    margin-left: 15px;
 }
 
 .ava_friend_tab_div {
@@ -1793,7 +1799,7 @@ input.form_input_0:focus:required:invalid {
 
     border-radius: 2px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 3px 4.75px 0.25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.15);
     margin: 0 10px;
     margin-bottom: 15px;
     padding: 12px 0;
@@ -1925,6 +1931,10 @@ input.form_input_0:focus:required:invalid {
     width: 100%;
     height: 100px;
     background: #dcdcdc;
+    overflow: hidden;
+}
+.baner_card_categories_page img {
+    width: 100%;
 }
 .items_categories_page {
     margin: 5px 13px;
@@ -1947,6 +1957,10 @@ input.form_input_0:focus:required:invalid {
     background: #dcdcdc;
     border-radius: 2px 2px 0 0;
     position: relative;
+    overflow: hidden;
+}
+.img_div_categories_page img {
+    width: 100%;
 }
 .title_div_categories_page {
     position: absolute;
@@ -2013,7 +2027,6 @@ input.form_input_0:focus:required:invalid {
 .text_categories_page {
     margin: 0;
     text-align: center;
-    font-size: 12px;
     color: rgba(0, 0, 0, 0.871);
     line-height: 1.2;
     min-height: 100px;
@@ -2619,6 +2632,7 @@ input.form_input_0:focus:required:invalid {
 
 
 
+
 /***** Album iner page *****/
 .blocks_album_page_bord {
     border-top: 1px solid #e7e7e7;
@@ -2646,7 +2660,135 @@ input.form_input_0:focus:required:invalid {
 
 
 
+/***** Album open page *****/
+.album_open_add_comment {
+    margin: 0 16px;
+    margin-bottom: 10px;
+}
 
+.album_open_add_comment .post_bot .comment_write {
+    width: calc(100% + 10px);
+    margin-left: -5px;
+}
+.album_open_add_comment .data_album_open {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.541);
+    line-height: 1.2;
+    margin-top: 15px;
+    margin-left: -3px;
+    margin-bottom: 11px;
+}
+
+.slider_album_open {
+    position: relative;
+    background: #2d2d2d;
+    height: 400px;
+
+
+}
+
+.open_modal_slider_a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    background: url("../img/ic_fullscreen.png") no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+
+.slider_album_open_iner {
+    width: 100%;
+    height: 100%;
+
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.slider_album_open_iner .slick-slider,.slider_album_open_iner .slick-track,.slider_album_open_iner .slick-list{
+    width: 100%;
+    height: 100%;
+}
+.slick_item {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+
+    -ms-flex-wrap: wrap!important;
+    flex-wrap: wrap!important;
+
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+
+    -webkit-box-pack: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+
+    width: 100%;
+    height: 100%;    
+    margin: 0 auto;
+}
+.slider_modal {
+    width: 100%;
+    height: 100%;
+    background: #2d2d2d;
+    margin: 0;
+}
+
+.slider_album_open_iner .slick-prev:before, .slider_album_open_iner .slick-next:before {
+    display: none;
+}
+.slider_album_open_iner .slick-prev {
+    left: 15px;
+    width: 14px;
+    height: 26px;
+    background: url(../img/left_arrow.png) no-repeat;
+    background-size: contain;
+}
+.slider_album_open_iner .slick-next {
+    right: 15px;
+    width: 14px;
+    height: 26px;
+    background: url(../img/right_arrow.png) no-repeat;
+    background-size: contain;
+}
+.slider_album_open_iner .slick-prev:hover,.slider_album_open_iner .slick-prev:active,.slider_album_open_iner .slick-prev:focus  {
+    opacity: 0.6;
+    background: url(../img/left_arrow.png) no-repeat;
+    background-size: contain;
+}
+.slider_album_open_iner .slick-next:hover,.slider_album_open_iner .slick-next:active,.slider_album_open_iner .slick-next:focus {
+    opacity: 0.6;
+    background: url(../img/right_arrow.png) no-repeat;
+    background-size: contain;
+}
+
+.slider_album_open_iner .slick-prev, .slider_album_open_iner .slick-next {
+    top: calc(50% - 13px);
+    z-index: 1;
+}
+
+.slider_album_open_iner .fancybox-close-small:after {
+    content: " ";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 0;
+    border: none;
+    background: url("../img/ic_fullscreen_exit.png") no-repeat;
+    background-position: center;
+}
+.slider_album_open_iner .fancybox-close-small:hover:after {
+    opacity: 0.6;
+    background: url("../img/ic_fullscreen_exit.png") no-repeat;
+    background-position: center;
+}
 
 
 /* Card block */
@@ -2886,7 +3028,7 @@ input.form_input_0:focus:required:invalid {
     padding-top: 12px;
 }
 .modal_mid.them_mid .row {
-    margin: 0;
+    margin: 0 7px;
     margin-bottom: 7px;
 }
 .them_title {
@@ -2897,7 +3039,7 @@ input.form_input_0:focus:required:invalid {
 }
 .item_them {
     border-radius: 5px;
-    max-width: 221px;
+    max-width: 33.33%;
     height: 63px;
     margin: 7px;
     overflow: hidden;
@@ -2908,6 +3050,13 @@ input.form_input_0:focus:required:invalid {
 .them_none {
     text-align: left;
 }
+.them_none p {
+    color: rgba(0, 0, 0, 0.541);
+}
+.them_none.active p {
+    color: rgba(0, 0, 0, 0.871);
+}
+
 .them_none .zamok {
     position: relative;
     display: inline-block;

@@ -107,6 +107,10 @@
         margin-right: 5px;
         padding-top: 0px;
     }
+
+    .left_menu .help {
+        display: none;
+    }
 }
 
 /* Средние девайсы («таблетки», <= 767px) */
@@ -126,6 +130,12 @@
         margin: 0;
         margin-left: -4px;
         margin-right: -4px;
+        margin-top: 15px;
+    }
+    .card_tasks_bookmarks_page {
+        margin-top: 15px;
+        padding: 0px;
+        box-shadow: none;
     }
 
     .users_bookmark_page {
@@ -167,6 +177,18 @@
         top: -2px;
         right: 0px;
     }
+    .text_categories_page {
+        font-size: 12px;
+    }
+
+    .search_filters {
+        display: none;
+    }
+
+    .tabs_friends_page a span {
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 649px) { 
@@ -219,16 +241,8 @@
     }
 
 
-    .info_level a {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        line-height: 42px;
-        text-align: center;
-        font-weight: bold;
-    }
-    .info_level a span {
-        display: none;
+    .info_level a, .achievements_level a {
+        width: 120px;
     }
 
     .baner_rating_page {
@@ -243,7 +257,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .item_categories_page {
+    .item_categories_page,  .album_block_plus {
         min-width: calc(50% - 10px);
         max-width: calc(50% - 10px);
     }
@@ -453,7 +467,13 @@
         margin: 0 5px;
         width: calc(50% - 12px);
     }
+    .card-mini {
+        min-width: calc(100% - 14px);
+        margin: 0px;
+        margin-bottom: 8px;
+    }
 }
+
 
 @media only screen and (max-width: 420px) {
     .button_ategories_page .button_1{
@@ -469,8 +489,8 @@
     }
 
     .bread_crumbs {
-        font-size: 10px;
-        padding: 8px 15px;
+        font-size: 14px;
+        padding: 6px 15px;
     }
 
     .users_bookmark_page {
@@ -490,12 +510,15 @@
     .add_wall_buttons {
         margin-right: 26px;
     }
+    .bread_crumbs {
+        font-size: 13px;
+    }
 }
 
 @media only screen and (max-width: 359px) {
    
     .mob_ico_btc_user .mob_ico_btc {
-        margin-left: 10px;
+        margin-left: 8px;
     }
     .mob_ico_btc_user .mob_ico_btc:first-child {
         margin-left: 0px;
@@ -508,12 +531,19 @@
         margin: 0px;
         width: 36px;
     }
+    .card_friend_tab_div .add_to_friend_tab_div {
+        margin-left: 0px;
+        display: block;
+    }
 }
 
 /* IPhone 5 */
 @media only screen and (max-width: 340px) {
-
+    .bread_crumbs {
+        font-size: 11px;
+        padding: 8px 15px;
+    }
     .add_wall_buttons {
-        margin-right: 15px;
+        margin-right: 13px;
     }
 }
