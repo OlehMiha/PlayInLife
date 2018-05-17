@@ -139,6 +139,42 @@ $('.notifications_js').on('click', 'li', function (e) {
     $(this).addClass('active');
 });
 
+//Message
+$(".message_iner_js." + $('.message_js a.active').attr('href')).fadeIn(200);
+$('.message_js').on('click', 'a', function (e) {
+    e.preventDefault();
+    if ($(this).hasClass('active')) {
+        return;
+    }
+
+    var class_tab = $(this).attr('href');
+
+    $(".message_js a").removeClass('active');
+    $(".message_iner_js").css('display','none');
+
+    $(".message_iner_js." + class_tab).fadeIn(200);
+    $(this).addClass('active');
+});
+
+//Acardion
+$(".acardion_iner_js." + $('.acardion_js a.acardion_top.active').attr('href')).fadeIn(200);
+$('.acardion_js').on('click', 'a.acardion_top', function (e) {
+    e.preventDefault();
+    if ($(this).hasClass('active')) {
+        $(".acardion_js a.acardion_top").removeClass('active');
+        $(".acardion_iner_js").css('display','none');
+        return;
+    }
+
+    var class_tab = $(this).attr('href');
+
+    $(".acardion_js a.acardion_top").removeClass('active');
+    $(".acardion_iner_js").css('display','none');
+
+    $(".acardion_iner_js." + class_tab).fadeIn(200);
+    $(this).addClass('active');
+});
+
 //Tabs
 $(".tab_js." + $('.tabs_js.active').attr('data-tab')).fadeIn(200);
 $('.tabs_js').on('click', function (e) {

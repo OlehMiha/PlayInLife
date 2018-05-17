@@ -2791,6 +2791,220 @@ input.form_input_0:focus:required:invalid {
 }
 
 
+
+
+
+/* Message block */
+.message_page {
+    margin: 0;
+}
+
+.message_page_left_col {
+    max-width: 245px;
+}
+
+.message_page_right_col {
+    margin-left: 10px;
+}
+
+.card_message_l, .card_search_l {
+    height: 55px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.card_message_l:hover, .card_message_l.active {
+    background: #e5e5e5;
+}
+
+.search_message {
+    position: relative;
+}
+.search_message input {
+    border: none;
+    width: 100%;
+    height: 55px;
+    padding-left: 55px;
+}
+.search_message:before {
+    content: "";
+    display: block;
+    width: 53px;
+    height: 55px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background: url("../img/search.png") no-repeat;
+    background-position: center;
+}
+
+.card_message_l_iner {
+    padding: 7px;
+    font-size: 12px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+}
+.card_message_l .ava_message {
+    width: 39px;
+    min-width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background: #add19a;
+    margin-right: 9px;
+}
+.card_message_l .mid_message {
+    width: 100%;
+}
+.card_message_l .title_message {
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+.card_message_l .text_message {
+    color: rgb(100, 100, 100);
+    line-height: 1.2;
+}
+.card_message_l .new_message {
+    display: none;
+    width: 19px;
+    min-width: 19px;
+    height: 13px;
+    background: url("../img/new_mess.png") no-repeat;
+    background-position: center;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+.card_message_l .new_message.active {
+    display: block;
+}
+.message_iner_js {
+    display: none;
+}
+
+.card_chat {
+    padding: 11px 9px;
+    height: 352px;
+    margin-bottom: 12px;
+}
+.message_chat {  
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+.message_chat.message_chat_you {  
+    text-align: right;
+}
+.message_chat .title {
+    color: rgb(0, 0, 0);
+    margin-bottom: 6px;
+}
+.message_chat .title .data {
+    color: rgb(209, 209, 209);
+}
+.message_chat .text {
+    color: rgb(100, 100, 100);
+}
+
+
+
+
+
+/* Help page */
+.card_help_page {
+    padding-bottom: 5px;
+}
+.card_help_page .text_categories_page {
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.icon_m.icon_m_14 {
+    background: url('../img/ico_m_14.png') no-repeat;
+    background-position: center;
+}
+.icon_m.icon_m_15 {
+    background: url('../img/ico_m_15.png') no-repeat;
+    background-position: center;
+}
+.icon_m.icon_m_16 {
+    background: url('../img/ico_m_16.png') no-repeat;
+    background-position: center;
+}
+.icon_m.icon_m_17 {
+    background: url('../img/ico_m_17.png') no-repeat;
+    background-position: center;
+}
+.icon_m.icon_m_18 {
+    background: url('../img/ico_m_18.png') no-repeat;
+    background-position: center;
+}
+
+
+
+    /* Acardion */
+.card_acardion {
+    height: auto;
+    min-height: 40px;
+    padding: 0;
+}
+
+.acardion_top {
+    height: 40px;
+    padding: 0 18px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+}
+.acardion_top span { 
+    display: block;
+    width: 21px;
+    height: 12px;
+    background: url("../img/arr_down.png") no-repeat;
+    background-position: center;
+}
+.acardion_top.active span { 
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.acardion_iner_js {
+    display: none;
+}
+.acardion_content {
+    padding: 0 18px;
+    padding-bottom: 20px;
+}
+.acardion_content p {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.2;
+}
+
+
+
+
+
 /* Card block */
 .card_block_v2 {
     display: none;
