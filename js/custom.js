@@ -175,6 +175,23 @@ $('.acardion_js').on('click', 'a.acardion_top', function (e) {
     $(this).addClass('active');
 });
 
+//Acardion
+$(".settings_iner_js." + $('.settings_js a.edit_a.active').attr('href')).fadeIn(200);
+$('.settings_js').on('click', 'a.edit_a', function (e) {
+    e.preventDefault();
+    if ($(this).hasClass('active')) {
+        return;
+    }
+
+    var class_tab = $(this).attr('href');
+
+    $(".settings_js a.edit_a").removeClass('active');
+    $(".settings_iner_js").css('display','none');
+
+    $(".settings_iner_js." + class_tab).fadeIn(200);
+    $(this).addClass('active');
+});
+
 //Tabs
 $(".tab_js." + $('.tabs_js.active').attr('data-tab')).fadeIn(200);
 $('.tabs_js').on('click', function (e) {

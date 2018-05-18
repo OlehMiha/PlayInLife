@@ -3005,6 +3005,194 @@ input.form_input_0:focus:required:invalid {
 
 
 
+/* Settings block */
+.card_settings_page {
+    margin-top: 15px;
+}
+
+.form_settings {
+    margin: 0 15px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.field_form_settings {
+    padding-right: 42px;
+    height: 30px;
+    margin-bottom: 14px;
+}
+.field_form_settings > input {
+    border-width: 1px;
+    border-color: rgb(229, 229, 229);
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 225px;
+    height: 29px;
+    float: right;
+    padding-left: 10px;
+}
+.field_form_settings > label {
+    padding: 0;
+    margin: 0;
+    line-height: 29px;
+}
+
+.right_form_settings .field_form_settings {
+    padding-right: 0px;
+    padding-left: 7px;
+}
+
+.birthday {
+    float: right;
+}
+.birthday input {
+    border-width: 1px;
+    border-color: rgb(229, 229, 229);
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 65px;
+    height: 29px;
+    margin-right: 12px;
+    padding-left: 10px;
+}
+.birthday input:last-child {
+    margin-right: 0px;
+}
+   
+
+.form_settings_col_bot_1 {
+    min-width: 44.5%;
+}
+.form_settings_col_bot_2 {
+    min-width: 44.5%;
+}
+.form_settings_col_bot_3 {
+    min-width: 11%;
+    text-align: right;
+}
+.form_settings_bot a {
+    color: #1e88e5;
+}
+.form_settings_bot .form_settings{
+    margin-top: 13px;
+    margin-bottom: 11px;
+}
+
+.settings_iner_js {
+    display: none;
+}
+.settings_iner_js.active {
+    display: block;
+}
+.edit_setting_iner input {
+    border-width: 1px;
+    border-color: rgb(229, 229, 229);
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 322px;
+    height: 29px;
+    padding-left: 10px;
+    margin-top: -5px;
+}
+.edit_setting_iner  .form_settings_col_bot_1 {
+    min-width: 20%;
+    max-width: 20%;
+}
+.edit_setting_iner .form_settings_col_bot_2 {
+    min-width: 60%;
+}
+.edit_setting_iner ..form_settings_col_bot_3 {
+    min-width: 20album_open%;
+}
+.edit_setting_iner .form_settings {
+    margin-bottom: 20px;
+}
+.edit_setting_iner .form_settings .button_1{
+    color: rgba(0, 0, 0, 0.871);
+    margin-bottom: -5px;
+}
+
+.table_settings {
+    margin: 0;
+    padding: 0 14px;
+    font-size: 12px;
+}
+.table_settings_head {
+    height: 31px;
+    background: #fbc02d;
+}
+.table_settings .col_1_settings {
+    max-width: 38%;
+    min-width: 38%;
+}
+.table_settings .col_2_settings {
+    max-width: 20%;
+    min-width: 20%;
+    text-align: center;
+}
+.table_settings .col_3_settings {
+    max-width: 26%;
+    min-width: 26%;
+    text-align: center;
+}
+.table_settings .col_4_settings {
+    max-width: 16%;
+    min-width: 16%;
+    text-align: center;
+}
+
+.table_settings_mid {
+    padding-top: 17px;
+}
+.table_settings_mid > div {
+    height: 48px;
+}
+
+
+.trigger_settings {
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    margin: 5px 0;
+}
+
+.trigger_settings input[type="checkbox"] {    
+    display: none;
+}
+.checkbox_triger {
+    display: inline-block;
+    position: relative;
+    width: 34px;
+    height: 14px;
+    background: #b9b8b8;
+    border-radius: 7px;
+}
+.trigger_settings .checkbox_triger:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    border-radius: 50%;
+    background: rgb(241, 241, 241);
+    box-shadow: 0px 2px 2.82px 0.18px rgba(0, 0, 0, 0.24);
+    width: 20px;
+    height: 20px;
+
+}
+.trigger_settings input[type="checkbox"]:checked + .checkbox_triger {    
+    background: #ffd451;
+}
+.trigger_settings input[type="checkbox"]:checked + .checkbox_triger:before {    
+    background: #ffc000;
+    left: auto;
+    right: 0px;
+}
+
+
+
+
 /* Card block */
 .card_block_v2 {
     display: none;
@@ -3477,6 +3665,55 @@ input.form_input_0:focus:required:invalid {
     margin: 0;
     line-height: 46px;
 }
+
+
+
+.album_open {
+
+}
+.album_open .modal_top {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.album_open .modal_mid {
+    text-align: left;
+    padding: 13px;
+}
+.album_open .modal_mid .title {
+    margin-bottom: 16px;
+}
+.album_open .modal_mid input {
+    border-width: 1px;
+    border-color: rgb(193, 193, 193);
+    border-style: solid;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    margin-top: -5px;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+.album_open .forms_triger {
+    margin-bottom: 10px;
+}
+.album_open .forms_triger p {
+    display: inline-block;
+    float: left;
+    width: 115px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.871);
+    margin-top: 3px;
+}
+
+
+
+
+
+
+
 
 
 /* Animate */

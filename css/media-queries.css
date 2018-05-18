@@ -189,6 +189,16 @@
         display: none;
     }
 
+
+    .right_form_settings .field_form_settings {
+        padding: 0px;
+        padding-right: 20%;
+    }
+    .field_form_settings {
+        padding: 0;
+        padding-right: 20%;
+    }
+
 }
 
 @media only screen and (max-width: 649px) { 
@@ -272,6 +282,24 @@
     }
     .task_bookmarks_page p,.task_bookmarks_page h4 {
         padding-right: 25px;
+    }
+
+    .right_form_settings .field_form_settings {
+        padding: 0px;
+        padding-right: 0%;
+    }
+    .field_form_settings {
+        padding: 0;
+        padding-right: 0%;
+    }
+    .form_settings_col_bot_1 {
+        min-width: 40%;
+    }
+    .form_settings_col_bot_2 {
+        min-width: 40%;
+    }
+    .form_settings_col_bot_3 {
+        min-width: 20%;
     }
 }
 
@@ -403,6 +431,10 @@
     }
     .post_bot a:last-child {
         margin-left: -2px;
+    }
+
+    .table_settings {
+        font-size: 10px;
     }
 }
 
