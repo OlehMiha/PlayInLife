@@ -233,7 +233,7 @@
         float: right;
     }
     .info_card {
-        height: auto;
+        height: 196px;
     }
     .info_card .col:first-child {
         min-width: 100%;
@@ -247,7 +247,7 @@
         margin-bottom: 67px;
     }
     .achievements_div {
-        border-top: 1px solid #f3f3f3;
+        /*border-top: 1px solid #f3f3f3;*/
     }
 
 
@@ -566,6 +566,9 @@
     .card_friend_tab_div .add_to_friend_tab_div {
         margin-left: 0px;
         display: block;
+    }
+    .post_bot .button_1 {
+        width: 160px;
     }
 }
 

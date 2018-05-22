@@ -2794,7 +2794,15 @@ input.form_input_0:focus:required:invalid {
 
 
 
-/* Message block */
+/* Message page */
+.content_mess_h > .container,
+.content_mess_h > .container > .row,
+.content_mess_h > .container > .row > .col_content_mid,
+.content_mess_h > .container > .row > .col_content_mid > .row,
+.content_mess_h .message_page_left_col, 
+.content_mess_h .message_page_right_col {
+    height: calc(100vh - 60px);
+}
 .message_page {
     margin: 0;
 }
@@ -2891,10 +2899,18 @@ input.form_input_0:focus:required:invalid {
 .message_iner_js {
     display: none;
 }
-
+.message_page_left_col .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+    
+    padding: 0 5px ;
+    margin: 0 -5px ;
+}
+.message_page_left_col .mCustomScrollBox {
+    
+    padding: 0 5px ;
+}
 .card_chat {
     padding: 11px 9px;
-    height: 352px;
+    height: calc(100vh - 225px);
     margin-bottom: 12px;
 }
 .message_chat {  
