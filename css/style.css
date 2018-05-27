@@ -3209,6 +3209,313 @@ input.form_input_0:focus:required:invalid {
 
 
 
+/* Registration page */
+.registration_all {
+    position: relative;
+    height: 100vh;
+    background: url("../img/reg_bac.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.registration_all header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 113px;
+    padding: 0 30px;
+    padding-top: 22px;
+}
+
+
+.registration_content {
+    height: 100%;
+}
+a.logo_text {
+    float: left;
+    font-size: 35px;
+    letter-spacing: -0.7px;
+    color: #fbb903;
+}
+
+
+.buttom_top_registration {
+    float: right;
+    margin-top: 13px;
+}
+.buttom_top_registration p {
+    display: inline-block;
+    color: #fff;
+    margin-right: 15px;
+}
+.buttom_top_registration .button_1 {
+    width: 181px;
+    height: 42px;
+    font-size: 16px;
+    color: #000000;
+    border-radius: 21px;
+    background: #fbb903;
+}
+.buttom_top_registration .zar_button {
+    margin-right: 10px;
+}
+
+
+
+.registration_all footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 54px;
+    margin: 0;
+    padding: 0 30px;
+}
+
+.footer_left_reg {
+    font-family: "MyriadProRegular";
+}
+.footer_left_reg a {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.footer_left_reg a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.footer_left_reg a:after {
+    content: "|"
+}
+.footer_left_reg a:last-child:after {
+    content: " "
+}
+
+.registration_all footer p {
+    font-family: "MyriadProRegular";
+    float: right;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+main {
+    color: #fff;
+}
+main:focus, main:active, main:visited {
+    color: #fff;
+}
+
+main .text_block:focus, main .text_block:active, main .text_block:visited {
+    color: #fff;
+}
+.div_main_reg {
+    height: 100%;
+    max-width: 975px;
+    margin: 0 auto;
+}
+
+main .title {
+    font-size: 24px;
+    font-family: "MyriadProBold";
+    color: #fff;
+    margin-bottom: 32px;
+}
+main .text_block {
+    font-family: "MyriadProRegular";
+    font-size: 16px;
+    margin-bottom: 44px;
+    line-height: 1.2;
+}
+
+.div_main_reg_left {
+    text-align: center;
+}
+.ico_reg_div {
+    margin: 0 auto;
+}
+.ico_reg {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 49px;
+}
+.ico_reg_div .ico_reg:last-child {
+    margin-right: 0;
+}
+.ico_reg_1 {
+    background: url("../img/ico_reg_1.png") no-repeat;
+    background-position: center;
+}
+.ico_reg_2 {
+    background: url("../img/ico_reg_2.png") no-repeat;
+    background-position: center;
+}
+.ico_reg_3 {
+    background: url("../img/ico_reg_3.png") no-repeat;
+    background-position: center;
+}
+.ico_reg_4 {
+    background: url("../img/ico_reg_4.png") no-repeat;
+    background-position: center;
+}
+.ico_reg_5 {
+    background: url("../img/ico_reg_5.png") no-repeat;
+    background-position: center;
+}
+
+
+.form_reg {
+    width: 363px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 13.28px 2.72px rgba(0, 0, 0, 0.38);
+    float: right;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 24px;
+    display: none;
+}
+.form_reg.active {
+    display: block;
+}
+.form_reg .title{
+    font-family: "MyriadProRegular";
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.form_reg input {
+    border-width: 1px;
+    border-color: rgb(148, 148, 148);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 28px;
+    margin-bottom: 19px;
+}
+.input_div_reg {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.input_div_reg:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 40px;
+}
+.input_div_reg_1:before {
+    background: url("../img/email.png") no-repeat;
+    background-position: center;
+}
+
+.input_div_reg_2:before {
+    background: url("../img/lock-4.png") no-repeat;
+    background-position: center;
+}
+.input_div_reg_3:before {
+    background: url("../img/lock-4-2.png") no-repeat;
+    background-position: center;
+}
+.input_div_reg_2 {
+    margin-right: 7px;
+}
+.input_div_reg_2, .input_div_reg_3 {
+    width: 156px;
+}
+
+.form_reg .button_1 {
+    margin-top: 13px;
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.social_form_reg {
+    margin-top: 37px;
+}
+.social_form_reg a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 20px;
+}
+.social_form_reg a.vk {
+    background: #7895c4;
+}
+.social_form_reg a.fb {
+    background: #526191;
+}
+.social_form_reg a.ok {
+    background: #e89b4b;
+}
+.social_form_reg a.insta {
+    background: #c9bea9;
+}
+.social_form_reg a:last-child {
+    margin-right: 0px;
+}
+.social_form_reg a:hover {
+    box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24), 0px 2px 5.88px 0.12px rgba(0, 0, 0, 0.16);
+}
+
+.form_reg_2 .input_div_reg_2 {
+    width: 100%;
+    margin-right: 0;
+}
+
+.coment_reg_form {
+    font-family: "MyriadProRegular";
+    color: #000000;
+    font-size: 16px;
+    margin-top: 3px;
+    margin-bottom: -28px;
+}
+.coment_reg_form a{
+    color: #004e6e;
+    margin-left: 5px;
+}
+
+.form_reg .title_bot {
+    font-family: "MyriadProRegular";
+    color: #000000;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 44px;
+    margin-bottom: 44px;
+    line-height: 1.3;
+    max-width: 300px;
+}
+.button_vostan_reg_div {
+    text-align: left;
+    margin-top: 18px;
+}
+.form_reg .button_vostan_reg_div .button_1 {
+    width: 62%;
+}
+.form_reg .button_vostan_reg_div .button_3 {
+    display: inline-block;
+    width: 36%;
+    text-align: center;
+}
+
+
+
+
 /* Card block */
 .card_block_v2 {
     display: none;
