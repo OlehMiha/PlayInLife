@@ -263,6 +263,24 @@ $("#rank_level_progres_bar").change(function(event) {
     }, 0);
 }).change();
 
+//Reg Click
+$('.reg_js').on('click', function (e) {
+    e.preventDefault();
+    if ($(this).hasClass('active')) {
+        return;
+    }
+
+    var class_tab = $(this).attr('href');
+
+    $(".form_reg").removeClass('active');
+    $(".reg_js").removeClass('active');
+
+    $(".form_reg." + class_tab).addClass('active');
+    $(this).addClass('active');
+});
+
+
+
 //Меню топ скрол
     var h = $(window).height();
  

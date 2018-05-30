@@ -111,6 +111,38 @@
     .left_menu .help {
         display: none;
     }
+
+    .form_reg {
+        width: 100%;
+        max-width: 363px;
+        float: none;
+        margin: 0 auto;
+    }
+    .registration_all footer {
+        display: none
+    }
+    .registration_all header {
+        position: static;
+        min-height: 80px;
+        height: auto;
+        padding: 0;
+        padding-top: 10px;
+    }
+    main .title {
+        margin-bottom: 5px;
+    }
+    main .text_block {
+        margin-bottom: 25px;
+    }
+    .mob_reg_form_div {
+        min-height: 50vh;
+        height: 50vh;
+        max-height: 50vh;
+    }
+    .div_main_reg_left {
+        text-align: center;
+        height: 40px;
+    }
 }
 
 /* Средние девайсы («таблетки», <= 767px) */
@@ -230,6 +262,97 @@
         padding-right: 20%;
     }
 
+
+
+    .registration_all {
+        position: relative;
+        height: 100vh;
+        background: url(../img/bac_reg_mob.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .form_reg {
+        width: 100%;
+        max-width: 100%;
+        float: none;
+        margin: 0 auto;
+        border-radius: 0px;
+        min-height: 100%;
+        max-height: 100%;
+        height: 100%;
+    }
+    .mob_reg_form_div {
+        padding: 0;
+        position: fixed;
+        bottom: 0;
+    }
+    .form_reg .title {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .form_reg input {
+        margin-bottom: 15px;
+    }
+    .form_reg .button_1 {
+        margin-top: 0px;
+    }
+
+    .registration_all header {
+        position: fixed;
+    }
+    .div_main_reg_left {
+        position: fixed;
+        bottom: 50%;
+        text-align: center;
+        height: auto;
+        padding: 0;
+        padding-bottom: 30px;
+        color: #000000;
+    }
+    main .title {
+        color: #000000;
+    }
+    a.logo_text {
+        float: none;
+        display: block;
+        height: 56px;
+        background: url("../img/logo_mob_reg.png") no-repeat;
+        background-position: center;
+    }
+    a.logo_text span {
+        display: none;
+    }
+    .buttom_top_registration p {
+        display: block;
+        color: #fff;
+        text-align: center;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .buttom_top_registration {
+        text-align: center;
+        width: 100%;
+        float: none;
+        margin-top: 0px;
+    }
+    .buttom_top_registration .button_1 {
+        width: 174px;
+        height: 30px;
+    }
+    main .text_block {
+        margin-bottom: 10px;
+    }
+    .div_main_reg_left {
+        padding-bottom: 15px;
+    }
+    .registration_all header {
+        padding-top: 0px;
+    }
+    .input_div_reg_2, .input_div_reg_3 {
+        width: 49%;
+    }
 }
 
 @media only screen and (max-width: 649px) { 
@@ -538,6 +661,14 @@
 }
 
 
+@media only screen and (max-width: 470px) {
+    main .title {
+        font-size: 20px;
+    }
+    .ico_reg {
+        margin-right: 25px;
+    }
+}
 @media only screen and (max-width: 420px) {
     .button_ategories_page .button_1{
         width: 140px;
@@ -567,6 +698,21 @@
         height: 100px;
         background: #a0a0a0;
         margin: 3px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    main .title {
+        font-size: 18px;
+    }
+    .ico_reg {
+        margin-right: 15px;
+    }
+    .buttom_top_registration .button_1 {
+        width: 160px;
+        font-size: 14px;
+    }
+    main .text_block {
+        font-size: 14px;
     }
 }
 @media only screen and (max-width: 379px) {
@@ -611,5 +757,17 @@
     }
     .add_wall_buttons {
         margin-right: 13px;
+    }
+    .buttom_top_registration .zar_button {
+        margin-right: 0px;
+    }
+    .buttom_top_registration .button_1 {
+        width: 155px;
+    }
+    main .title {
+        font-size: 16px;
+    }
+    main .text_block {
+        font-size: 12px;
     }
 }

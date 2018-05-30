@@ -3306,7 +3306,7 @@ main:focus, main:active, main:visited {
     color: #fff;
 }
 
-main .text_block:focus, main .text_block:active, main .text_block:visited {
+.registration_content div:focus, .registration_content div:active, .registration_content div:visited {
     color: #fff;
 }
 .div_main_reg {
@@ -3523,7 +3523,7 @@ main .text_block {
     width: 100%;
     height: 40px;
     border-radius: 20px;
-    padding-left: 28px;
+    padding-left: 15px;
     margin: 0 auto;
     margin-bottom: 19px;
     color: #8f8f8f;
@@ -3550,8 +3550,22 @@ main .text_block {
     right: 10px;
     background: url(../img/arrow-down-filled-triangle.png) no-repeat;
 }
-
-
+.select_reg  .jq-selectbox__dropdown {
+    left: 5px;
+    top: 38px;
+}
+.select_reg {
+    display: inline-block;
+}
+.select_reg_1, .select_reg_2, .select_reg_3 {
+    width: 32%;
+}
+.select_reg_4, .select_reg_5 {
+    width: 49%;
+}
+.form_reg.form_reg_4 input{
+    padding-left: 15px;
+}
 
 
 
