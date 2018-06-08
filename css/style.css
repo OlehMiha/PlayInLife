@@ -3366,6 +3366,7 @@ main .text_block {
 
 
 .form_reg {
+    position: relative;
     width: 363px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
@@ -3375,6 +3376,16 @@ main .text_block {
     padding: 20px;
     padding-bottom: 24px;
     display: none;
+}
+.form_reg a.arr {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 18px;
+    width: 30px;
+    height: 30px;
+    background: url("../img/ic_arrow_forward.png") no-repeat;
+    background-position: left center;
 }
 .form_reg.active {
     display: block;
@@ -3396,7 +3407,7 @@ main .text_block {
     width: 100%;
     height: 40px;
     border-radius: 20px;
-    padding-left: 28px;
+    padding-left: 35px;
     margin-bottom: 19px;
 }
 .input_div_reg {
@@ -3409,7 +3420,7 @@ main .text_block {
     display: block;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 7px;
     width: 28px;
     height: 40px;
 }
@@ -3439,6 +3450,7 @@ main .text_block {
     width: 100%;
     border-radius: 20px;
     text-transform: uppercase;
+    text-align: center !important;
 }
 
 .social_form_reg {
@@ -3615,6 +3627,7 @@ main .text_block {
 .modal .modal-dialog_1 {
     width: 100%;
     max-width: 420px;
+    margin: 0 auto;
     margin-top: 80px;
     text-align: center;
 }

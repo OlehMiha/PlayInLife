@@ -135,7 +135,7 @@
         margin-bottom: 25px;
     }
     .mob_reg_form_div {
-        min-height: 50vh;
+        min-height: 340px;
         height: 50vh;
         max-height: 50vh;
     }
@@ -284,8 +284,9 @@
     }
     .mob_reg_form_div {
         padding: 0;
-        position: fixed;
+        position: absolute;
         bottom: 0;
+        left: 0;
     }
     .form_reg .title {
         margin-top: 0px;
@@ -299,11 +300,12 @@
     }
 
     .registration_all header {
-        position: fixed;
+        position: static;
     }
     .div_main_reg_left {
-        position: fixed;
-        bottom: 50%;
+        position: absolute;
+        top: 25%;
+        left: 0;
         text-align: center;
         height: auto;
         padding: 0;
@@ -352,6 +354,42 @@
     }
     .input_div_reg_2, .input_div_reg_3 {
         width: 49%;
+    }
+
+    .form_reg a.arr {
+        display: block;
+    }
+    .form_reg {
+        padding: 15px;
+    }
+
+    .ico_reg_div {
+        display: none;
+    }
+    .form_reg .title_bot {
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+
+    .registration_all {
+        position: relative;
+        height: 100vh;
+        min-height: 568px;
+    }
+    .coment_reg_form {
+        margin-top: 25px;
+        margin-bottom: -5px;
+    }
+    .social_form_reg {
+        margin-top: 20px;
+    }
+    .form_reg  {
+        text-align: center;
+    }
+    .form_reg button span {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
     }
 }
 
@@ -425,6 +463,9 @@
         min-width: calc(50% - 10px);
         max-width: calc(50% - 10px);
     }
+    .input_div_reg_2, .input_div_reg_3 {
+        width: 100%;
+    }
 }
 /* Малые девайсы («ландшафтные телефоны», <= 575px) */
 @media only screen and (max-width: 575px) {
@@ -454,6 +495,24 @@
     }
     .form_settings_col_bot_3 {
         min-width: 20%;
+    }
+    .ico_reg {
+        width: 30px;
+        height: 30px;
+    }
+    .ico_reg.ico_reg_1, 
+    .ico_reg.ico_reg_2, 
+    .ico_reg.ico_reg_3, 
+    .ico_reg.ico_reg_4, 
+    .ico_reg.ico_reg_5 {
+        background-size: contain;
+    }
+    .head_notifications {
+        width: 100%;
+        right: 0px;
+    }
+    .notifications_left {
+        display: none;
     }
 }
 
@@ -666,7 +725,7 @@
         font-size: 20px;
     }
     .ico_reg {
-        margin-right: 25px;
+        margin-right: 35px;
     }
 }
 @media only screen and (max-width: 420px) {
@@ -705,7 +764,7 @@
         font-size: 18px;
     }
     .ico_reg {
-        margin-right: 15px;
+        margin-right: 25px;
     }
     .buttom_top_registration .button_1 {
         width: 160px;
@@ -769,5 +828,8 @@
     }
     main .text_block {
         font-size: 12px;
+    }
+    .div_main_reg_left {
+        top: 144px;
     }
 }
