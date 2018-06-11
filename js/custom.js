@@ -1,4 +1,8 @@
 $(document).ready(function(){ 
+var width_el = Number(document.documentElement.clientWidth);
+    
+
+
 //Отключить выделение
     window.oncontextmenu = function() {
         return false;
@@ -143,6 +147,14 @@ $('.notifications_js').on('click', 'li', function (e) {
 $(".message_iner_js." + $('.message_js a.active').attr('href')).fadeIn(200);
 $('.message_js').on('click', 'a', function (e) {
     e.preventDefault();
+
+    if(width_el <= 768){
+        if( !($(".message_page_right_col").hasClass('active')) ){
+            $(".message_page_right_col").addClass('active');
+            $(".message_page_left_col").css('display','none');
+        }
+    }
+
     if ($(this).hasClass('active')) {
         return;
     }
@@ -155,6 +167,13 @@ $('.message_js').on('click', 'a', function (e) {
     $(".message_iner_js." + class_tab).fadeIn(200);
     $(this).addClass('active');
 });
+$('.header_message_mobi').on('click', 'a.arr', function (e) {
+    e.preventDefault();
+
+    $(".message_page_right_col").removeClass('active');
+    $(".message_page_left_col").css('display','block');
+});
+
 
 //Acardion
 $(".acardion_iner_js." + $('.acardion_js a.acardion_top.active').attr('href')).fadeIn(200);
@@ -175,7 +194,7 @@ $('.acardion_js').on('click', 'a.acardion_top', function (e) {
     $(this).addClass('active');
 });
 
-//Acardion
+//Settings
 $(".settings_iner_js." + $('.settings_js a.edit_a.active').attr('href')).fadeIn(200);
 $('.settings_js').on('click', 'a.edit_a', function (e) {
     e.preventDefault();
@@ -378,10 +397,7 @@ $('.reg_js').on('click', function (e) {
     });
     
 
-    var width_el = Number(document.documentElement.clientWidth);
-    if(width_el <= 768){
-        $('.item_block_1').removeClass('active');
-    }
+    
 
 
 	

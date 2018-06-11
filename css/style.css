@@ -2896,6 +2896,13 @@ input.form_input_0:focus:required:invalid {
 .card_message_l .new_message.active {
     display: block;
 }
+.message_js {    
+    max-height: calc(100vh - 115px);
+    overflow: auto;
+}
+.message_js .mCSB_inside > .mCSB_container {
+    margin-right: 0px;
+}
 .message_iner_js {
     display: none;
 }
@@ -2931,7 +2938,33 @@ input.form_input_0:focus:required:invalid {
 .message_chat .text {
     color: rgb(100, 100, 100);
 }
-
+.header_message_mobi {
+    position: relative;
+    height: 30px;
+    text-align: center;
+    display: none;
+    padding-top: 5px;
+}
+.header_message_mobi {
+    position: relative;
+    height: 30px;
+    text-align: center;
+    display: none;
+    background: #fbc02d;
+    color: #000000;
+}
+.header_message_mobi .arr{
+    position: absolute;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/ic_arrow_back_l.png) no-repeat;
+    background-position: left center;
+}
 
 
 
@@ -3926,9 +3959,20 @@ main .text_block {
     max-width: 40px;
     min-width: 40px;
     height: 40px;
+    margin: 4px;
+}
+.modal-dialog_7 .item_like_modal_ava {
+    display: block;
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
     background: #e2e2e2;
     border-radius: 50%;
-    margin: 5px;
+}
+
+.modal-dialog_7 .item_like_modal p {
+    display: none;
+    color: #000000;
 }
 .modal-dialog_7 .custom_scrollbar {
     height: 215px;
@@ -4123,4 +4167,10 @@ main .text_block {
 
 .demo_modal > div {
     margin: 5px 0;
+}
+
+button.button_1 span {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
 }
