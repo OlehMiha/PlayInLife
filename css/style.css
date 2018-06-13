@@ -488,6 +488,22 @@ input.form_input_0:focus:required:invalid {
 .head_notifications_iner {
     margin: 0;
 }
+
+.notifications_top_selected_div {
+    background: #ffc000;
+    height: 30px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    display: none;
+}
+.notifications_top_selected_div .jq-selectbox {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+
+
 .notifications_left {
     max-width: 214px;
     border-right: 1px solid #e7e7e7;

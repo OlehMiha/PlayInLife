@@ -143,6 +143,21 @@ $('.notifications_js').on('click', 'li', function (e) {
     $(this).addClass('active');
 });
 
+$('.notifications_selected_js ul').on('click', 'li', function (e) {
+    e.preventDefault();
+    if ($(this).hasClass('active')) {
+        return;
+    }
+
+    var class_tab = $(this).index() + 1;
+    
+    $(".notifications_selected_js li").removeClass('active');
+    $(".notifications_iner_js").css('display','none');
+
+    $(".notifications_iner_js.not" + class_tab).fadeIn(200);
+    $(this).addClass('active');
+});
+
 //Message
 $(".message_iner_js." + $('.message_js a.active').attr('href')).fadeIn(200);
 $('.message_js').on('click', 'a', function (e) {
